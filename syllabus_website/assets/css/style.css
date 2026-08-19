@@ -132,6 +132,11 @@ button.btn.ghost:hover { background: rgba(255,255,255,.12); }
 .subacc.material.data  { --box-color: var(--data); --box-bg: var(--data-bg); }
 .subacc.material.cs    { --box-color: var(--cs); --box-bg: var(--cs-bg); }
 .subacc.material.stat  { --box-color: var(--stat); --box-bg: var(--stat-bg); }
+.subacc.grade-breakdown { --box-color: var(--cp-green); --box-bg: var(--cp-green-light); }
+.subacc.grade-scale { --box-color: var(--found); --box-bg: var(--found-bg); }
+.subacc.etv-cycle { --box-color: var(--data); --box-bg: var(--data-bg); }
+.subacc.schedule-outline { --box-color: var(--cs); --box-bg: var(--cs-bg); }
+.subacc.deadlines { --box-color: var(--drill); --box-bg: var(--drill-bg); }
 .material-intro { margin: 14px 0 10px; color: var(--muted); }
 .material-icon { width: 26px; text-align: center; font-size: 1.15rem; }
 .desc { border-left: 3px solid var(--box-color, var(--cp-gold)); padding: 2px 0 2px 12px; margin: 6px 0 12px; }
@@ -181,6 +186,14 @@ button.btn.ghost:hover { background: rgba(255,255,255,.12); }
 .dataset-list span { flex: 0 0 auto; padding: 2px 8px; border-radius: 999px; background: rgba(255,255,255,.8); color: var(--muted); font-size: .76rem; font-weight: 800; text-transform: uppercase; letter-spacing: .03em; }
 @media (max-width: 620px) { .dataset-list { grid-template-columns: 1fr; } .sub-btn .sub-meta { display: none; } }
 .calendar-source { padding: 9px 12px; border-left: 4px solid var(--cp-gold); background: var(--cp-gold-light); color: var(--muted); font-size: .9rem; }
+.etv-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin-top: 12px; }
+.etv-step { display: flex; gap: 10px; padding: 12px; border: 1px solid var(--data-line); border-radius: 9px; background: #fff; }
+.etv-step > span { flex: 0 0 auto; display: grid; place-items: center; width: 34px; height: 34px; border-radius: 50%; background: var(--data); color: #fff; font-size: 1rem; font-weight: 900; }
+.etv-step.transform > span { background: var(--cs); }
+.etv-step.visualize > span { background: var(--stat); }
+.etv-step strong { color: var(--cp-green-dark); }
+.etv-step p { margin: 3px 0 0; color: var(--muted); font-size: .88rem; }
+@media (max-width: 760px) { .etv-grid { grid-template-columns: 1fr; } }
 .kv { display: grid; grid-template-columns: max-content 1fr; gap: 6px 16px; margin: 12px 0; }
 .kv dt { font-weight: 700; color: var(--muted); }
 .kv dd { margin: 0; }

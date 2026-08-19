@@ -254,8 +254,13 @@
       <h2><button class="acc-btn" type="button" aria-expanded="false" aria-controls="p6"><span class="acc-num">6</span><span class="acc-title">Assignment and Grade Breakdown</span><svg class="acc-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></h2>
       <div class="acc-panel" id="p6" hidden>
         <p style="margin-top:14px">Your grade comes from cumulative <span class="pill p-exam">Exams</span>, frequent low-stakes <span class="pill p-ci">Check-Ins</span>, take-home <span class="pill p-lab">Labs</span>, and spaced-review <span class="pill p-drill">Drills</span>.</p>
-        <div class="tbl-scroll">
-          <table>
+        <p class="material-intro">Select a topic to view the details.</p>
+
+        <div class="subacc grade-breakdown">
+          <button class="sub-btn" type="button" aria-expanded="false" aria-controls="g-breakdown"><span class="pill p-plo">1,000 pts</span> Assignment &amp; grade breakdown<span class="sub-meta">categories, points, and percentages</span><svg class="acc-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <div class="sub-panel" id="g-breakdown" hidden>
+            <div class="tbl-scroll">
+              <table>
             <thead><tr><th>Category</th><th>Count</th><th># Questions</th><th class="num">Points</th><th class="num">% of grade</th><th>Share</th></tr></thead>
             <tbody>
               <tr><td><span class="pill p-exam">FE</span> Final Exam (cumulative)</td><td>1×</td><td>35</td><td class="num"><span data-field="grading.points.final" data-label="PTS"></span></td><td class="num">32.5%</td><td><div class="bar-track"><div class="bar-fill" style="width:100%;background:var(--exam)"></div></div></td></tr>
@@ -267,12 +272,16 @@
               <tr><td><span class="pill p-gray">NA</span> Participation &amp; attendance</td><td>—</td><td>—</td><td class="num">0</td><td class="num">0%</td><td><div class="bar-track"></div></td></tr>
               <tr class="total"><td>Total</td><td></td><td></td><td class="num"><span data-field="grading.points.total" data-label="TOTAL PTS"></span></td><td class="num">100%</td><td></td></tr>
             </tbody>
-          </table>
+              </table>
+            </div>
+          </div>
         </div>
 
-        <h3>Exam weights &amp; coverage</h3>
-        <div class="tbl-scroll">
-          <table>
+        <div class="subacc exam">
+          <button class="sub-btn" type="button" aria-expanded="false" aria-controls="g-exams"><span class="pill p-exam">FE · ME</span> Exam weights &amp; coverage<span class="sub-meta">four cumulative exams</span><svg class="acc-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <div class="sub-panel" id="g-exams" hidden>
+            <div class="tbl-scroll">
+              <table>
             <thead><tr><th>Exam</th><th class="num">Weight</th><th>When</th><th>Emphasis weeks</th><th>Coverage (cumulative)</th></tr></thead>
             <tbody>
               <tr><td><span class="pill p-exam">ME1</span> Midterm 1</td><td class="num">6%</td><td>Wed, week 5 — <span data-field="schedule.midterm1_date" data-label="DATE"></span></td><td>1–4</td><td>Weeks 1–4</td></tr>
@@ -280,12 +289,18 @@
               <tr><td><span class="pill p-exam">ME3</span> Midterm 3</td><td class="num">11%</td><td>Wed, week 13 — <span data-field="schedule.midterm3_date" data-label="DATE"></span></td><td>9–12</td><td>Weeks 1–12</td></tr>
               <tr><td><span class="pill p-exam">FE</span> Common Final Exam</td><td class="num">32.5%</td><td><span data-field="schedule.final_date" data-label="DATE / TIME"></span></td><td>all</td><td>All course material</td></tr>
             </tbody>
-          </table>
+              </table>
+            </div>
+          </div>
         </div>
 
-        <h3>Letter grade scale</h3>
-        <div data-render="grade_scale"></div>
-        <p><strong>Rounding / curving:</strong> <span data-field="grading.rounding_policy" data-label="ROUNDING / CURVING POLICY"></span></p>
+        <div class="subacc grade-scale">
+          <button class="sub-btn" type="button" aria-expanded="false" aria-controls="g-scale"><span class="pill p-found">A+–F</span> Letter grade scale<span class="sub-meta">cutoffs and curving policy</span><svg class="acc-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <div class="sub-panel" id="g-scale" hidden>
+            <div data-render="grade_scale"></div>
+            <p><strong>Rounding / curving:</strong> <span data-field="grading.rounding_policy" data-label="ROUNDING / CURVING POLICY"></span></p>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -382,35 +397,53 @@
         <p style="margin-top:14px"><em>Tentative — the schedule may shift; changes will be announced in class and on the course site.</em> Weeks 3–9 center on complete Extract → Transform → Visualize cycles (C1–C12) plus two midterms; the Labor Day holiday is reflected below. Labs (weekly), drills (~4×/week), and check-ins (most class meetings) run throughout.</p>
         <p class="calendar-source"><strong>Fall 2026 dates:</strong> verified against the <a href="https://registrar.calpoly.edu/academic-calendar-2026-2027" target="_blank" rel="noopener noreferrer">Cal Poly Office of the Registrar academic calendar</a>.</p>
 
-        <h3>Week-by-week outline</h3>
-        <div class="tbl-scroll">
-          <table class="allow-break">
+        <div class="subacc etv-cycle">
+          <button class="sub-btn" type="button" aria-expanded="false" aria-controls="s-etv"><span class="pill p-data">ETV</span> The course ETV cycle<span class="sub-meta">a flexible workflow used throughout the course</span><svg class="acc-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <div class="sub-panel" id="s-etv" hidden>
+            <p>Course examples follow the same broad cycle. Specific tools and functions may change as datasets and student needs evolve.</p>
+            <div class="etv-grid">
+              <div class="etv-step extract"><span>E</span><div><strong>Extract</strong><p>Bring data into the project from files, websites, APIs, or other sources and inspect what arrived.</p></div></div>
+              <div class="etv-step transform"><span>T</span><div><strong>Transform</strong><p>Clean, organize, combine, and summarize the data so it can answer the question.</p></div></div>
+              <div class="etv-step visualize"><span>V</span><div><strong>Visualize</strong><p>Create and refine a display, interpret the result, and communicate the answer responsibly.</p></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="subacc schedule-outline">
+          <button class="sub-btn" type="button" aria-expanded="false" aria-controls="s-weekly"><span class="material-icon" aria-hidden="true">🗓️</span> Week-by-week outline<span class="sub-meta">tentative topics and datasets</span><svg class="acc-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <div class="sub-panel" id="s-weekly" hidden>
+            <div class="tbl-scroll">
+              <table class="allow-break">
             <thead><tr><th>Wk</th><th>Dates</th><th>Block</th><th>Monday</th><th>Wednesday</th><th>Dataset · guiding question</th><th>Assessments / notes</th></tr></thead>
             <tbody>
               <tr class="row-found"><td class="ctr"><strong>1</strong></td><td><span data-field="schedule.week_dates.0" data-label="DATES"></span></td><td><span class="pill p-found">Found.</span></td><td><strong>Syllabus + drill app</strong>: token, rules, first warm-ups</td><td>Positron, projects, directories, storage magnitudes</td><td>— (tiny demo objects)</td><td>Drills open <span data-field="schedule.week_notes.0" data-optional></span></td></tr>
-              <tr class="row-found"><td class="ctr"><strong>2</strong></td><td><span data-field="schedule.week_dates.1" data-label="DATES"></span></td><td><span class="pill p-found">Found.</span></td><td>Types, coercion, assignment, selected operators</td><td>Vectors, data frames, lists, accessing, pipe; 5-min preview of one whole ETV cycle</td><td>penguins snippets</td><td>Lab · CI · Drills <span data-field="schedule.week_notes.1" data-optional></span></td></tr>
-              <tr class="row-data holiday-row"><td class="ctr"><strong>3</strong></td><td><span data-field="schedule.week_dates.2" data-label="DATES"></span></td><td><span class="pill p-data">ETV</span></td><td><strong>Labor Day — no class</strong></td><td><strong>C1–C2</strong> Extract: CSV and Excel; <code>glimpse()</code>, <code>filter()</code>, <code>select()</code>, and <code>case_when()</code> → first visualizations</td><td>Coffee “What does spending look like?” · Kobe “Points, home vs away?”</td><td>Lab · CI · Drills <span data-field="schedule.week_notes.2" data-optional></span></td></tr>
-              <tr class="row-data"><td class="ctr"><strong>4</strong></td><td><span data-field="schedule.week_dates.3" data-label="DATES"></span></td><td><span class="pill p-data">ETV</span></td><td><strong>C3</strong> Transform: stringr <code>str_detect()</code>, <code>str_to_lower()</code>, recode → flagged scatter</td><td><strong>C4</strong> Transform: stringr categories + lubridate timestamps → counts by hour/type</td><td>Fast-food “Which items are mislabeled?” · SLO crime “Where/when do incidents cluster?”</td><td>Lab · CI · Drills <span data-field="schedule.week_notes.3" data-optional></span></td></tr>
-              <tr class="row-data"><td class="ctr"><strong>5</strong></td><td><span data-field="schedule.week_dates.4" data-label="DATES"></span></td><td><span class="pill p-data">ETV</span></td><td><strong>C5</strong> Transform: <code>pivot_longer()</code>/<code>pivot_wider()</code> + join team info → paired comparison</td><td class="exam-cell"><span class="pill p-exam">ME1</span> <strong>Midterm 1</strong> (weeks 1–4)</td><td>Kobe reuse “Home/away, properly shaped?”</td><td><span class="pill p-exam">ME1</span> · Lab · CI · Drills <span data-field="schedule.week_notes.4" data-optional></span></td></tr>
-              <tr class="row-data"><td class="ctr"><strong>6</strong></td><td><span data-field="schedule.week_dates.5" data-label="DATES"></span></td><td><span class="pill p-data">ETV</span></td><td><strong>C6</strong> Transform→Visualize: <code>count()</code>, proportions, forcats <code>fct_infreq()</code>/<code>fct_lump()</code> → bar + mosaic; <em>Ethics: representation / fairness</em></td><td><strong>C7</strong> Visualize: conditional proportions <code>.by=</code> → ggplot grammar: scales, labels, themes</td><td>Coffee reuse “Origins × roasts?” · “Same table, better told?”</td><td>Lab · CI · Drills <span data-field="schedule.week_notes.5" data-optional></span></td></tr>
-              <tr class="row-data"><td class="ctr"><strong>7</strong></td><td><span data-field="schedule.week_dates.6" data-label="DATES"></span></td><td><span class="pill p-data">ETV</span></td><td><strong>C8</strong> Extract: web scrape, <code>parse_number()</code>; <code>summarise()</code> mean/median/sd/IQR → dual center-lines; <em>Ethics: measurement</em></td><td><strong>C9</strong> Transform: cache habit <code>write_csv()</code>; drop LA, re-summarise → before/after plot</td><td>Counties “Why mean ≫ median?” · “Does the story survive?”</td><td>Lab · CI · Drills <span data-field="schedule.week_notes.6" data-optional></span></td></tr>
-              <tr class="row-data"><td class="ctr"><strong>8</strong></td><td><span data-field="schedule.week_dates.7" data-label="DATES"></span></td><td><span class="pill p-data">ETV</span></td><td><strong>C10</strong> Extract: one <code>httr2::request()</code>; unnest, <code>mutate()</code> → histogram + density</td><td><strong>C11</strong> Visualize: <code>if_else()</code> flags, date bins → box/violin by month, scatter</td><td>Weather “How windy was January?” · “Which days were extreme?”</td><td>Lab · CI · Drills <span data-field="schedule.week_notes.7" data-optional></span></td></tr>
-              <tr class="row-data"><td class="ctr"><strong>9</strong></td><td><span data-field="schedule.week_dates.8" data-label="DATES"></span></td><td><span class="pill p-data">ETV</span></td><td><strong>C12 Integrated capstone</strong>: <code>mutate()</code> rates, <code>filter()</code> → two visualizations, one claim</td><td class="exam-cell"><span class="pill p-exam">ME2</span> <strong>Midterm 2</strong> (cumulative, emphasis weeks 5–8)</td><td>NBA GOATs “Peak, longevity, or both?”</td><td><span class="pill p-exam">ME2</span> · Lab · CI · Drills <span data-field="schedule.week_notes.8" data-optional></span></td></tr>
-              <tr class="row-cs"><td class="ctr"><strong>10</strong></td><td><span data-field="schedule.week_dates.9" data-label="DATES"></span></td><td><span class="pill p-cs">CS</span></td><td>Control flow: operators, <code>if</code>/<code>else</code>, flags</td><td>Loops: accumulators, <code>for</code>/<code>while</code></td><td>Weather reuse — flag impossible rows</td><td>Lab · CI · Drills <span data-field="schedule.week_notes.9" data-optional></span></td></tr>
-              <tr class="row-cs"><td class="ctr"><strong>11</strong></td><td><span data-field="schedule.week_dates.10" data-label="DATES"></span></td><td><span class="pill p-cs">CS</span></td><td>purrr <code>map()</code> + <code>\()</code> vs loops</td><td><strong>Motivator: import &amp; combine 30 Excel files</strong></td><td>Kobe game logs × 30 seasons; Weather × 12 months</td><td>Lab · CI · Drills <span data-field="schedule.week_notes.10" data-optional></span></td></tr>
-              <tr class="row-cs holiday-row"><td class="ctr"><strong>12</strong></td><td><span data-field="schedule.week_dates.11" data-label="DATES"></span></td><td><span class="pill p-cs">CS</span></td><td>Functions: wrap week-11 pipeline into <code>import_season()</code>; scoping; debug dojo</td><td><strong>Veterans Day — no class</strong></td><td>Week-11 pipeline, one call</td><td>Lab · CI · Drills <span data-field="schedule.week_notes.11" data-optional></span></td></tr>
+              <tr class="row-found"><td class="ctr"><strong>2</strong></td><td><span data-field="schedule.week_dates.1" data-label="DATES"></span></td><td><span class="pill p-found">Found.</span></td><td>R objects, data structures, assignment, and selected operators</td><td>Project workflow and a preview of one complete ETV cycle</td><td>penguins snippets</td><td>Lab · CI · Drills <span data-field="schedule.week_notes.1" data-optional></span></td></tr>
+              <tr class="row-data holiday-row"><td class="ctr"><strong>3</strong></td><td><span data-field="schedule.week_dates.2" data-label="DATES"></span></td><td><span class="pill p-data">ETV</span></td><td><strong>Labor Day — no class</strong></td><td><strong>C1–C2</strong> Extract data from CSV and Excel files, inspect it, and create first visualizations</td><td>Coffee “What does spending look like?” · Kobe “Points, home vs away?”</td><td>Lab · CI · Drills <span data-field="schedule.week_notes.2" data-optional></span></td></tr>
+              <tr class="row-data"><td class="ctr"><strong>4</strong></td><td><span data-field="schedule.week_dates.3" data-label="DATES"></span></td><td><span class="pill p-data">ETV</span></td><td><strong>C3</strong> Clean and recode text categories → flagged scatterplot</td><td><strong>C4</strong> Work with categories and timestamps → counts by hour and type</td><td>Fast-food “Which items are mislabeled?” · SLO crime “Where/when do incidents cluster?”</td><td>Lab · CI · Drills <span data-field="schedule.week_notes.3" data-optional></span></td></tr>
+              <tr class="row-data"><td class="ctr"><strong>5</strong></td><td><span data-field="schedule.week_dates.4" data-label="DATES"></span></td><td><span class="pill p-data">ETV</span></td><td><strong>C5</strong> Reshape and join data → paired comparison</td><td class="exam-cell"><span class="pill p-exam">ME1</span> <strong>Midterm 1</strong> (weeks 1–4)</td><td>Kobe reuse “Home/away, properly shaped?”</td><td><span class="pill p-exam">ME1</span> · Lab · CI · Drills <span data-field="schedule.week_notes.4" data-optional></span></td></tr>
+              <tr class="row-data"><td class="ctr"><strong>6</strong></td><td><span data-field="schedule.week_dates.5" data-label="DATES"></span></td><td><span class="pill p-data">ETV</span></td><td><strong>C6</strong> Summarize categories and proportions → bar and mosaic displays; <em>Ethics: representation / fairness</em></td><td><strong>C7</strong> Compare conditional proportions and refine the visual story</td><td>Coffee reuse “Origins × roasts?” · “Same table, better told?”</td><td>Lab · CI · Drills <span data-field="schedule.week_notes.5" data-optional></span></td></tr>
+              <tr class="row-data"><td class="ctr"><strong>7</strong></td><td><span data-field="schedule.week_dates.6" data-label="DATES"></span></td><td><span class="pill p-data">ETV</span></td><td><strong>C8</strong> Extract web data and compare numerical summaries; <em>Ethics: measurement</em></td><td><strong>C9</strong> Cache extracted data and evaluate how exclusions change the story</td><td>Counties “Why mean ≫ median?” · “Does the story survive?”</td><td>Lab · CI · Drills <span data-field="schedule.week_notes.6" data-optional></span></td></tr>
+              <tr class="row-data"><td class="ctr"><strong>8</strong></td><td><span data-field="schedule.week_dates.7" data-label="DATES"></span></td><td><span class="pill p-data">ETV</span></td><td><strong>C10</strong> Extract API data and examine a distribution</td><td><strong>C11</strong> Identify extreme patterns and compare groups over time</td><td>Weather “How windy was January?” · “Which days were extreme?”</td><td>Lab · CI · Drills <span data-field="schedule.week_notes.7" data-optional></span></td></tr>
+              <tr class="row-data"><td class="ctr"><strong>9</strong></td><td><span data-field="schedule.week_dates.8" data-label="DATES"></span></td><td><span class="pill p-data">ETV</span></td><td><strong>C12 Integrated capstone</strong>: derive useful measures, create two visualizations, and make one supported claim</td><td class="exam-cell"><span class="pill p-exam">ME2</span> <strong>Midterm 2</strong> (cumulative, emphasis weeks 5–8)</td><td>NBA GOATs “Peak, longevity, or both?”</td><td><span class="pill p-exam">ME2</span> · Lab · CI · Drills <span data-field="schedule.week_notes.8" data-optional></span></td></tr>
+              <tr class="row-cs"><td class="ctr"><strong>10</strong></td><td><span data-field="schedule.week_dates.9" data-label="DATES"></span></td><td><span class="pill p-cs">CS</span></td><td>Conditional reasoning and data-quality flags</td><td>Iteration, loops, and accumulators</td><td>Weather reuse — flag impossible rows</td><td>Lab · CI · Drills <span data-field="schedule.week_notes.9" data-optional></span></td></tr>
+              <tr class="row-cs"><td class="ctr"><strong>11</strong></td><td><span data-field="schedule.week_dates.10" data-label="DATES"></span></td><td><span class="pill p-cs">CS</span></td><td>Compare iteration approaches</td><td><strong>Motivator: import and combine many files efficiently</strong></td><td>Kobe game logs × 30 seasons; Weather × 12 months</td><td>Lab · CI · Drills <span data-field="schedule.week_notes.10" data-optional></span></td></tr>
+              <tr class="row-cs holiday-row"><td class="ctr"><strong>12</strong></td><td><span data-field="schedule.week_dates.11" data-label="DATES"></span></td><td><span class="pill p-cs">CS</span></td><td>Build reusable workflows; scoping and debugging</td><td><strong>Veterans Day — no class</strong></td><td>Week-11 pipeline, one reusable workflow</td><td>Lab · CI · Drills <span data-field="schedule.week_notes.11" data-optional></span></td></tr>
               <tr class="row-stat"><td class="ctr"><strong>13</strong></td><td><span data-field="schedule.week_dates.12" data-label="DATES"></span></td><td><span class="pill p-stat">STAT</span></td><td>Statistical questions &amp; hypothesis-testing foundations; <strong>.qmd from scratch #1</strong>; ANOVA</td><td class="exam-cell"><span class="pill p-exam">ME3</span> <strong>Midterm 3</strong> (cumulative, emphasis weeks 9–12)</td><td>Coffee reuse — “Does rating differ by origin?”</td><td><span class="pill p-exam">ME3</span> · Lab · CI · Drills <span data-field="schedule.week_notes.12" data-optional></span></td></tr>
               <tr class="break-row"><td class="ctr"><strong>Break</strong></td><td>Nov. 23–29</td><td>—</td><td colspan="4"><strong>Fall Break — no classes</strong></td></tr>
               <tr class="row-stat"><td class="ctr"><strong>14</strong></td><td><span data-field="schedule.week_dates.13" data-label="DATES"></span></td><td><span class="pill p-stat">STAT</span></td><td>Chi-square; .qmd #2</td><td>Interpretation; <em>Ethics: modeling</em></td><td>GOATs reuse — era × position</td><td>Lab · CI · Drills <span data-field="schedule.week_notes.13" data-optional></span></td></tr>
               <tr class="row-stat"><td class="ctr"><strong>15</strong></td><td><span data-field="schedule.week_dates.14" data-label="DATES"></span></td><td><span class="pill p-stat">STAT</span></td><td>Simple linear regression; .qmd #3; <em>Ethics: transparency / consequences</em></td><td>Capstone review</td><td>GOATs reuse — points ~ seasons</td><td>Lab · CI · Drills <span data-field="schedule.week_notes.14" data-optional></span></td></tr>
               <tr class="row-exam"><td class="ctr"><strong>Final</strong></td><td><span data-field="schedule.final_date" data-label="DATE &amp; TIME"></span></td><td><span class="pill p-exam">FE</span></td><td colspan="4"><strong>Common Final Exam</strong> — cumulative, all course material, 35 questions · <span data-field="course.final_exam_location" data-label="LOCATION"></span></td></tr>
             </tbody>
-          </table>
+              </table>
+            </div>
+          </div>
         </div>
 
-        <h3>Important dates &amp; deadlines</h3>
-        <div class="tbl-scroll">
-          <table>
+        <div class="subacc deadlines">
+          <button class="sub-btn" type="button" aria-expanded="false" aria-controls="s-deadlines"><span class="material-icon" aria-hidden="true">⏰</span> Important dates &amp; deadlines<span class="sub-meta">exams, labs, drills, and holidays</span><svg class="acc-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <div class="sub-panel" id="s-deadlines" hidden>
+            <div class="tbl-scroll">
+              <table>
             <thead><tr><th>Item</th><th>When</th><th>Date</th></tr></thead>
             <tbody>
               <tr><td><span class="pill p-exam">ME1</span> Midterm 1 (weeks 1–4)</td><td>Wednesday, week 5</td><td><span data-field="schedule.midterm1_date" data-label="DATE"></span></td></tr>
@@ -422,7 +455,9 @@
               <tr><td><span class="pill p-ci">CI</span> Check-Ins</td><td>In class, most meetings</td><td>—</td></tr>
               <tr><td>Add/drop deadline · Withdrawal deadline · Holidays</td><td>—</td><td><span data-field="schedule.other_deadlines" data-label="DATES"></span></td></tr>
             </tbody>
-          </table>
+              </table>
+            </div>
+          </div>
         </div>
       </div>
     </section>

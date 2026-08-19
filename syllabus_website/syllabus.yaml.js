@@ -100,7 +100,7 @@ grading:
   #   - { letter: "C−", range: "70–72.9" }
   #   - { letter: "D",  range: "60–69.9" }
   #   - { letter: "F",  range: "below 60" }
-  rounding_policy: ""       # e.g., "Final percentages are rounded to the nearest tenth; no curve."
+  rounding_policy: "TBD — the rounding and curving policy will be determined during final exam week."
 
 assignments:
   exams:
@@ -124,7 +124,7 @@ assignments:
       The format of the labs may vary. Some may include videos, demonstrations, guided coding exercises, independent investigations, or other supporting materials. Because each lab may require a different approach, begin early and allow yourself enough time to complete every component thoughtfully. After each lab, you will complete a 7–10-question Canvas assessment to demonstrate your understanding of the material.
 
       The individual and collaborative check-ins will be closely connected to the skills developed in the labs. Although AI can help you complete portions of a lab, it cannot replace your responsibility to understand the code, explain your decisions, and apply the material independently. The check-ins provide regular opportunities to demonstrate that understanding.
-    due: ""                 # e.g., "Sundays at 11:59 PM"
+    due: "Assigned each Wednesday and due the following Wednesday at 11:59 PM (one week later)."
     submission: ""          # what to submit (.qmd + rendered HTML/PDF?) and where
   drills:
     description: |
@@ -133,7 +133,7 @@ assignments:
       The drills will reinforce material from class while occasionally introducing variations, extensions, or unfamiliar situations. When you encounter something new, use AI investigatively: ask questions, examine explanations, test alternatives, and determine why a solution works. The goal is not simply to finish 40 questions. The goal is to strengthen your foundation, expand your experience, and become a more capable and confident R programmer.
 
       You may complete more than the required 40 questions. Opportunities for additional credit will reward meaningful practice beyond the weekly requirement, particularly consistent practice completed throughout the semester and in preparation for assessments. The application will explain the specific requirements and available incentives. The more problems you thoughtfully complete, the more patterns, techniques, and extensions you will encounter—and that experience will directly support your success in the course.
-    deadline: ""            # weekly drill deadline
+    deadline: "Every Sunday at 11:59 PM."
     grading: ""             # completion vs. accuracy; do late drills count?
 
 schedule:
@@ -158,8 +158,8 @@ schedule:
   midterm2_date: "October 21, 2026"    # Wednesday of week 9
   midterm3_date: "November 18, 2026"   # moved to Wednesday of week 13; Nov. 11 is Veterans Day
   final_date: "Saturday, December 12, 2026 — time TBD"
-  lab_due: ""               # weekly lab due day/time
-  drill_deadline: ""        # weekly drill deadline
+  lab_due: "Assigned Wednesday; due the following Wednesday at 11:59 PM"
+  drill_deadline: "Every Sunday at 11:59 PM"
   other_deadlines: "Labor Day: Sept. 7 (no class) · Veterans Day: Nov. 11 (no class) · Fall Break: Nov. 23–29 · Last day of classes: Dec. 11 · Common Final: Dec. 12 (time TBD)"
   # Optional: put per-week notes here (holiday, no class, guest speaker). Same order as week_dates.
   week_notes:
