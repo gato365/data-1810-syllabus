@@ -320,9 +320,15 @@
               <li><strong>All exams are cumulative.</strong> Once an outcome first appears on a midterm it stays eligible on every exam after, including the final. Each exam emphasizes its most recent weeks (see Section 6).</li>
               <li><strong>Format:</strong> midterms are 20 questions, given on <strong>Wednesday</strong> of weeks 5, 9, and 13, and take <strong>60 minutes</strong>; 10–15 minutes of that class period is still devoted to a Check-In. The common final is 35 questions on Saturday, December 12; the time is TBD.</li>
               <li><strong>Question types:</strong> exam and check-in questions come in 14 consistent forms. Types 1–4 <em>read</em> supplied code and critique it; types 5–14 <em>produce</em> — write, complete, predict, calculate, interpret, or reflect.</li>
-              <li><strong>Materials allowed:</strong> <span data-field="assignments.exams.materials_allowed" data-label="MATERIALS ALLOWED"></span></li>
-              <li><strong>Make-up exams:</strong> <span data-field="assignments.exams.makeup" data-label="MAKE-UP / MISSED-EXAM POLICY"></span></li>
             </ul>
+            <div class="policy-detail exam-reference">
+              <h4>Exam reference sheets</h4>
+              <div data-field="assignments.exams.materials_allowed" data-fmt="rich" data-label="MATERIALS ALLOWED"></div>
+            </div>
+            <div class="policy-detail missed-exams">
+              <h4>Missed exams</h4>
+              <div data-field="assignments.exams.makeup" data-fmt="rich" data-label="MAKE-UP / MISSED-EXAM POLICY"></div>
+            </div>
           </div>
         </div>
 
@@ -332,8 +338,6 @@
           <div class="sub-panel" id="a-ci" hidden>
             <div class="desc"><span class="desc-label">Description</span><div data-field="assignments.checkins.description" data-fmt="rich" data-label="CHECK-INS DESCRIPTION PARAGRAPH"></div></div>
             <ul>
-              <li><strong>Purpose:</strong> low-stakes retrieval of recent material, in class, 10–15 minutes.</li>
-              <li><strong>Self check-ins</strong> (4 questions each, 15%) are completed individually; <strong>collaborative check-ins</strong> (3 questions each, 10%) are completed with classmates.</li>
               <li><strong>Submission:</strong> <span data-field="assignments.checkins.submission" data-label="HOW / WHEN CHECK-INS ARE SUBMITTED"></span></li>
               <li><strong>Missed check-ins:</strong> <span data-field="assignments.checkins.missed" data-label="NUMBER DROPPED / MAKE-UP RULE"></span> (see also Section 9).</li>
             </ul>
@@ -346,25 +350,10 @@
           <div class="sub-panel" id="a-labs" hidden>
             <div class="desc"><span class="desc-label">Description</span><div data-field="assignments.labs.description" data-fmt="rich" data-label="LABS DESCRIPTION PARAGRAPH"></div></div>
             <ul>
-              <li><strong>Purpose:</strong> applied practice; the main venue for API, scraping, export, and inference-output skills. Labs primarily assess the CLOs.</li>
-              <li><strong>Length:</strong> 10 questions each. <strong>AI tools are permitted</strong> on labs (see the AI policy in Section 9).</li>
               <li><strong>Due:</strong> <span data-field="assignments.labs.due" data-label="LAB DUE DAY / TIME"></span></li>
               <li><strong>Submission:</strong> <span data-field="assignments.labs.submission" data-label="WHAT TO SUBMIT &amp; WHERE"></span></li>
+              <li><strong>Late work and extensions:</strong> <span data-field="assignments.labs.late_policy" data-label="LAB LATE-WORK / EXTENSION POLICY"></span></li>
             </ul>
-            <p><strong>Every lab follows the same specification:</strong></p>
-            <div class="tbl-scroll">
-              <table>
-                <thead><tr><th>Requirement</th><th>What it looks like</th></tr></thead>
-                <tbody>
-                  <tr><td>Quarto</td><td>You create a Quarto (<code>.qmd</code>) document.</td></tr>
-                  <tr><td>Scaffold → scratch</td><td>Labs progress from fill-in-the-blank scaffolding to creating a document from scratch.</td></tr>
-                  <tr><td>Ethics</td><td>Each lab includes ethical considerations.</td></tr>
-                  <tr><td>Extract &amp; export</td><td>You extract data and export results.</td></tr>
-                  <tr><td>Revisit</td><td>Previously learned data-transformation techniques are revisited.</td></tr>
-                  <tr><td>New data</td><td>Different datasets are used so you learn to transfer skills to new contexts.</td></tr>
-                </tbody>
-              </table>
-            </div>
           </div>
         </div>
 
@@ -374,19 +363,26 @@
           <div class="sub-panel" id="a-drills" hidden>
             <div class="desc"><span class="desc-label">Description</span><div data-field="assignments.drills.description" data-fmt="rich" data-label="DRILLS DESCRIPTION PARAGRAPH"></div></div>
             <ul>
-              <li><strong>Purpose:</strong> repeated, focused practice <em>before</em> you apply skills in labs; questions return until they stick. Drills also introduce and reinforce some of the more challenging topics — a hard idea can appear in a drill before it is formally taught, and keep returning after.</li>
-              <li><strong>Rhythm:</strong> about 4 drills per week (10 questions each, ~40 questions/week), 5–20 minutes each, in the drill app. Drills open in weeks 1–2 and build all term.</li>
-              <li><strong>Alignment:</strong> drills mirror the notes, labs, CLOs, and exam question formats.</li>
               <li><strong>Deadline:</strong> <span data-field="assignments.drills.deadline" data-label="WEEKLY DRILL DEADLINE"></span></li>
               <li><strong>Grading:</strong> <span data-field="assignments.drills.grading" data-label="HOW DRILL CREDIT IS COMPUTED"></span></li>
             </ul>
+            <div class="tbl-scroll">
+              <table class="drill-credit-table">
+                <thead><tr><th>Engagement level</th><th>Completion and engagement</th><th class="num">Course-grade credit</th></tr></thead>
+                <tbody>
+                  <tr class="drill-complete"><td><strong>Complete</strong></td><td>At least 90% of questions and expected practice time completed</td><td class="num"><strong>7.5%</strong></td></tr>
+                  <tr class="drill-substantial"><td><strong>Substantial</strong></td><td>75%–89% of questions and expected practice time completed</td><td class="num"><strong>5.625%</strong></td></tr>
+                  <tr class="drill-partial"><td><strong>Partial</strong></td><td>50%–74% of questions and expected practice time completed</td><td class="num"><strong>3.75%</strong></td></tr>
+                  <tr class="drill-insufficient"><td><strong>Insufficient</strong></td><td>Less than 50% of questions or expected practice time completed</td><td class="num"><strong>0%</strong></td></tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
 
         <h3>Deadlines, late work, and missing assignments</h3>
         <div class="box gold"><b>Late / missing work</b>
           <div data-field="policies.late_work" data-fmt="rich" data-label="LATE-WORK POLICY"></div>
-        </div>
       </div>
     </section>
 

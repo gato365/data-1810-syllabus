@@ -105,36 +105,37 @@ grading:
 assignments:
   exams:
     description: |
-      The midterms allow you to demonstrate your individual understanding of the course material. Each midterm will be cumulative, with greater emphasis placed on the concepts introduced most recently. This structure reflects the nature of programming and data science: new skills continually depend on the foundation established earlier in the course.
+      Each exam combines Canvas questions with paper-and-pencil questions. Approximately 10%–25% of the questions will be completed through Canvas, and the remaining 75%–90% will be completed using paper and pencil. You are responsible for bringing any required materials and arriving prepared to complete both portions.
+    materials_allowed: |
+      **Midterm exams:** You may prepare one standard 8.5 × 11-inch reference sheet using one side only.
 
-      The final examination will also be cumulative and will assess your ability to integrate and apply ideas from across the semester. The labs, drills, and check-ins are intentionally designed to prepare you for these assessments. Consistent engagement throughout the course will be far more effective than attempting to relearn the material shortly before an exam.
-    materials_allowed: ""   # closed/open notes? calculator? computer? AI?
-    makeup: ""              # make-up / missed-exam policy
+      **Final exam:** You may prepare one standard 8.5 × 11-inch reference sheet using both the front and back.
+
+      Reference sheets must be prepared before the exam. No additional notes, reference materials, or unauthorized resources may be used.
+    makeup: |
+      Exam dates are firm, and extensions will not be granted. Review the exam schedule at the beginning of the semester and plan accordingly.
+
+      If a known academic, religious, athletic, professional, or personal obligation will prevent you from taking an exam as scheduled, notify the instructor at least two weeks in advance.
+
+      For an unexpected illness or emergency, contact the instructor as soon as possible—preferably the day before the exam, but no later than the day of the exam—and briefly explain the situation. Missed exams caused by documented illnesses or emergencies will be handled individually under course and university policies. Notification does not automatically guarantee an alternative exam arrangement.
   checkins:
     description: |
-      **Individual Check-Ins.** Each Monday, you will complete a brief individual check-in lasting approximately 10–15 minutes. These check-ins allow you to demonstrate what you understand from the labs and class activities and how well you can apply the material independently. Because learning to program requires retaining and building upon previous skills, the questions will be cumulative. You should be prepared to use concepts from both the current week and earlier portions of the course.
+      Check-ins are completed during class and may occur at any point during a class meeting. You must be present and participating when the check-in is administered to receive credit.
 
-      **Collaborative Check-Ins.** You will also complete collaborative check-ins in randomly assigned groups. Each group will have approximately 10–15 minutes to work through questions based on concepts introduced in class and practiced in the labs. These check-ins assess more than whether your group reaches the correct answer. They also give you practice explaining your reasoning, listening to different approaches, resolving disagreements, and working productively with a variety of classmates. Collaboration is an essential part of data science, and these check-ins will help you develop that skill throughout the course.
-    submission: ""          # paper / Canvas / in-app — how and when during class
-    missed: ""              # number dropped / make-up rule
+      **Self check-ins** are completed independently and assess your understanding of the course material. **Collaborative check-ins** are completed with assigned classmates and assess communication, problem-solving, and collaboration.
+    submission: "Completed during class; you must be present and participating when the check-in is administered."
+    missed: "Four scores are dropped automatically: two self check-ins and two collaborative check-ins. These drops account for occasional absences, illnesses, emergencies, or missed classes. Because four scores are already dropped, additional make-ups or extensions generally will not be provided."
   labs:
     description: |
-      The labs are where you will gain meaningful experience working with Quarto documents, analyzing data, and using AI as a learning tool outside the classroom. Early labs will provide substantial guidance, including partially completed examples and structured prompts. As the semester progresses, that support will gradually decrease. You will move from filling in portions of an existing document to receiving broader instructions and eventually creating and completing more of the Quarto workflow independently.
-
-      The format of the labs may vary. Some may include videos, demonstrations, guided coding exercises, independent investigations, or other supporting materials. Because each lab may require a different approach, begin early and allow yourself enough time to complete every component thoughtfully. After each lab, you will complete a 7–10-question Canvas assessment to demonstrate your understanding of the material.
-
-      The individual and collaborative check-ins will be closely connected to the skills developed in the labs. Although AI can help you complete portions of a lab, it cannot replace your responsibility to understand the code, explain your decisions, and apply the material independently. The check-ins provide regular opportunities to demonstrate that understanding.
+      Labs give you opportunities to practice and apply skills introduced in class. Complete the required work in your own Quarto (.qmd) file and retain that file as a record of your work.
     due: "Assigned each Wednesday and due the following Wednesday at 11:59 PM (one week later)."
-    submission: ""          # what to submit (.qmd + rendered HTML/PDF?) and where
+    submission: "Submit the answers used for grading through Canvas by the stated deadline. A completed Quarto (.qmd) file does not replace the required Canvas submission. You are responsible for confirming that Canvas received your answers successfully."
+    late_policy: "Late submissions and extensions ordinarily will not be accepted. An extension may be considered only under extreme circumstances. To request consideration, email the instructor at least one full day before the deadline. Sending a request does not guarantee approval."
   drills:
     description: |
-      Drills are a critical part of this course because programming improves through consistent, deliberate practice. You will be expected to complete 40 drill questions each week. One effective approach is to complete approximately 10 questions per day on any four days of your choice, although you may organize the work differently as long as you reach the weekly requirement.
-
-      The drills will reinforce material from class while occasionally introducing variations, extensions, or unfamiliar situations. When you encounter something new, use AI investigatively: ask questions, examine explanations, test alternatives, and determine why a solution works. The goal is not simply to finish 40 questions. The goal is to strengthen your foundation, expand your experience, and become a more capable and confident R programmer.
-
-      You may complete more than the required 40 questions. Opportunities for additional credit will reward meaningful practice beyond the weekly requirement, particularly consistent practice completed throughout the semester and in preparation for assessments. The application will explain the specific requirements and available incentives. The more problems you thoughtfully complete, the more patterns, techniques, and extensions you will encounter—and that experience will directly support your success in the course.
+      Each drill requires a good-faith attempt at all 40 assigned questions before the stated deadline. Begin early and distribute your practice throughout the week. Drill extensions will not be granted.
     deadline: "Every Sunday at 11:59 PM."
-    grading: ""             # completion vs. accuracy; do late drills count?
+    grading: "Credit is based on completion, participation, and time spent practicing—not solely on correctness. A question counts as completed when a reasonable attempt has been submitted. If question completion and practice time fall into different engagement levels, the lower level determines the credit awarded."
 
 schedule:
   # One entry per week (15) — e.g., "Sep 22 & 24"

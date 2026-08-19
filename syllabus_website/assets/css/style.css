@@ -141,6 +141,14 @@ button.btn.ghost:hover { background: rgba(255,255,255,.12); }
 .material-icon { width: 26px; text-align: center; font-size: 1.15rem; }
 .desc { border-left: 3px solid var(--box-color, var(--cp-gold)); padding: 2px 0 2px 12px; margin: 6px 0 12px; }
 .desc .desc-label { display: block; font-size: .75rem; text-transform: uppercase; letter-spacing: .08em; font-weight: 800; color: var(--muted); margin-bottom: 2px; }
+.policy-detail { margin: 12px 0; padding: 12px 14px; border: 1px solid var(--line); border-left: 4px solid var(--exam); border-radius: 7px; background: #fff; }
+.policy-detail h4 { margin: 0 0 7px; color: var(--cp-green-dark); }
+.policy-detail p:first-child { margin-top: 0; }
+.policy-detail p:last-child { margin-bottom: 0; }
+.drill-credit-table tr.drill-complete td { background: #ecfdf5; }
+.drill-credit-table tr.drill-substantial td { background: #f0fdf4; }
+.drill-credit-table tr.drill-partial td { background: #fffbeb; }
+.drill-credit-table tr.drill-insufficient td { background: #fef2f2; }
 
 /* ---------- boxes ---------- */
 .box { border: 1px solid var(--line); border-left: 5px solid var(--box-color, var(--cp-green)); background: var(--box-bg, #f6f7f4);
