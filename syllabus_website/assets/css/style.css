@@ -159,6 +159,14 @@ button.btn.ghost:hover { background: rgba(255,255,255,.12); }
 .install-guide li { counter-increment: install-step; position: relative; min-height: 34px; padding: 7px 10px 7px 46px; background: rgba(255,255,255,.72); border: 1px solid var(--found-line); border-radius: 8px; }
 .install-guide li::before { content: counter(install-step); position: absolute; left: 9px; top: 6px; display: grid; place-items: center; width: 28px; height: 28px; border-radius: 50%; color: #fff; background: var(--found); font-weight: 800; }
 .install-guide a { font-weight: 700; }
+.extra-credit-intro { color: var(--muted); }
+.extra-credit-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-top: 12px; }
+.extra-credit-card { position: relative; padding: 14px 14px 14px 52px; border: 1px solid #d8c58f; border-radius: 9px; background: rgba(255,255,255,.78); }
+.extra-credit-card.visual { border-color: var(--data-line); background: var(--data-bg); }
+.extra-credit-card p { margin-top: 0; }
+.extra-credit-icon { position: absolute; left: 13px; top: 13px; display: grid; place-items: center; width: 29px; height: 29px; border-radius: 50%; background: var(--cp-gold-light); font-size: 1.05rem; }
+.extra-credit-card.visual .extra-credit-icon { background: #dbeafe; }
+@media (max-width: 700px) { .extra-credit-grid { grid-template-columns: 1fr; } }
 .grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 12px; }
 .grid2 .box { margin: 0; }
 .tech-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }

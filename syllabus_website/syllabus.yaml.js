@@ -105,22 +105,34 @@ grading:
 assignments:
   exams:
     description: |
-      # (paragraph) your own description of the exams — purpose, feel, how to prepare
+      The midterms allow you to demonstrate your individual understanding of the course material. Each midterm will be cumulative, with greater emphasis placed on the concepts introduced most recently. This structure reflects the nature of programming and data science: new skills continually depend on the foundation established earlier in the course.
+
+      The final examination will also be cumulative and will assess your ability to integrate and apply ideas from across the semester. The labs, drills, and check-ins are intentionally designed to prepare you for these assessments. Consistent engagement throughout the course will be far more effective than attempting to relearn the material shortly before an exam.
     materials_allowed: ""   # closed/open notes? calculator? computer? AI?
     makeup: ""              # make-up / missed-exam policy
   checkins:
     description: |
-      # (paragraph) your own description of Check-Ins
+      **Individual Check-Ins.** Each Monday, you will complete a brief individual check-in lasting approximately 10–15 minutes. These check-ins allow you to demonstrate what you understand from the labs and class activities and how well you can apply the material independently. Because learning to program requires retaining and building upon previous skills, the questions will be cumulative. You should be prepared to use concepts from both the current week and earlier portions of the course.
+
+      **Collaborative Check-Ins.** You will also complete collaborative check-ins in randomly assigned groups. Each group will have approximately 10–15 minutes to work through questions based on concepts introduced in class and practiced in the labs. These check-ins assess more than whether your group reaches the correct answer. They also give you practice explaining your reasoning, listening to different approaches, resolving disagreements, and working productively with a variety of classmates. Collaboration is an essential part of data science, and these check-ins will help you develop that skill throughout the course.
     submission: ""          # paper / Canvas / in-app — how and when during class
     missed: ""              # number dropped / make-up rule
   labs:
     description: |
-      # (paragraph) your own description of Labs
+      The labs are where you will gain meaningful experience working with Quarto documents, analyzing data, and using AI as a learning tool outside the classroom. Early labs will provide substantial guidance, including partially completed examples and structured prompts. As the semester progresses, that support will gradually decrease. You will move from filling in portions of an existing document to receiving broader instructions and eventually creating and completing more of the Quarto workflow independently.
+
+      The format of the labs may vary. Some may include videos, demonstrations, guided coding exercises, independent investigations, or other supporting materials. Because each lab may require a different approach, begin early and allow yourself enough time to complete every component thoughtfully. After each lab, you will complete a 7–10-question Canvas assessment to demonstrate your understanding of the material.
+
+      The individual and collaborative check-ins will be closely connected to the skills developed in the labs. Although AI can help you complete portions of a lab, it cannot replace your responsibility to understand the code, explain your decisions, and apply the material independently. The check-ins provide regular opportunities to demonstrate that understanding.
     due: ""                 # e.g., "Sundays at 11:59 PM"
     submission: ""          # what to submit (.qmd + rendered HTML/PDF?) and where
   drills:
     description: |
-      # (paragraph) your own description of Drills
+      Drills are a critical part of this course because programming improves through consistent, deliberate practice. You will be expected to complete 40 drill questions each week. One effective approach is to complete approximately 10 questions per day on any four days of your choice, although you may organize the work differently as long as you reach the weekly requirement.
+
+      The drills will reinforce material from class while occasionally introducing variations, extensions, or unfamiliar situations. When you encounter something new, use AI investigatively: ask questions, examine explanations, test alternatives, and determine why a solution works. The goal is not simply to finish 40 questions. The goal is to strengthen your foundation, expand your experience, and become a more capable and confident R programmer.
+
+      You may complete more than the required 40 questions. Opportunities for additional credit will reward meaningful practice beyond the weekly requirement, particularly consistent practice completed throughout the semester and in preparation for assessments. The application will explain the specific requirements and available incentives. The more problems you thoughtfully complete, the more patterns, techniques, and extensions you will encounter—and that experience will directly support your success in the course.
     deadline: ""            # weekly drill deadline
     grading: ""             # completion vs. accuracy; do late drills count?
 
@@ -176,13 +188,22 @@ policies:
   ai_exams_checkins: ""     # AI on exams and check-ins (expected: not permitted)
   ai_drills: ""             # AI on drills
   ai_statement: |
-    # (paragraph) campus-recommended generative-AI syllabus statement — see https://ctlt.calpoly.edu/syllabus-statements
+    Artificial intelligence will be used in this course to enhance learning—not replace it. You are encouraged to use AI to investigate ideas, clarify concepts, explore alternative solutions, troubleshoot code, and ask deeper questions. However, you remain responsible for understanding any work you submit and for developing the ability to reason, communicate, and program independently.
+
+    Our shared goal is to use AI thoughtfully, responsibly, and collegially so that everyone can maximize this learning experience. By engaging seriously with the labs, drills, check-ins, and assessments, you will develop a strong foundation in R programming while applying important ideas from data science, statistics, and computer science.
   academic_integrity: |
     # (paragraph) academic integrity / collaboration policy and consequences
   dei: |
     # (paragraph) diversity, equity, inclusion, and classroom respect statement
   success_extra: |
     # (bullets, optional) extra advice, office-hour encouragement, tutoring / stat-lab resources
+  extra_credit:
+    see_me: |
+      **See Me Opportunity.** If you see me outside of class, ask me about the See Me Opportunity and complete the brief survey. This is a small extra-credit opportunity designed to encourage connection and conversation beyond scheduled class time.
+    see_me_survey_url: ""
+    visual: |
+      **Visual Opportunity.** Come to learning hours and ask a course-related question. After we discuss your question, ask, **“Can I see the Visual Opportunity?”** Then complete the brief survey to receive the extra-credit opportunity.
+    visual_survey_url: ""
   trips_events: ""          # course-related trips / special events, or "None planned"
   incentives: ""            # stickers or other course incentives, or "None"
   drc: |
