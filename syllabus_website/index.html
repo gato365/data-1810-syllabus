@@ -93,13 +93,13 @@
           <dt>Term</dt><dd><span data-field="course.term" data-label="TERM &amp; YEAR"></span></dd>
           <dt>Units</dt><dd><span data-field="course.units" data-label="UNITS"></span></dd>
           <dt>Class meetings</dt><dd><span data-field="course.meeting_days" data-label="DAYS"></span> · <span data-field="course.meeting_time" data-label="START–END TIME"></span> · <span data-field="course.location" data-label="BUILDING – ROOM"></span></dd>
-          <dt>Final assessment</dt><dd>Finals week — <span data-field="course.final_exam" data-label="DAY, DATE &amp; TIME OF FINAL EXAM"></span> · <span data-field="course.final_exam_location" data-label="LOCATION"></span></dd>
+          <dt>Final assessment</dt><dd><span data-field="course.final_exam" data-label="DAY, DATE &amp; TIME OF FINAL EXAM"></span> · <span data-field="course.final_exam_location" data-label="LOCATION"></span></dd>
           <dt>Prerequisites</dt><dd><span data-field="course.prerequisites" data-label="PREREQUISITES (as in catalog)"></span></dd>
           <dt>GE / GWR / USCP</dt><dd><span data-field="course.ge_gwr_uscp" data-label="GE / GWR / USCP STATUS"></span></dd>
           <dt>Course site</dt><dd><span data-link-field="course.course_site_url" data-label-field="course.course_site_label" data-label="COURSE SITE LINK"></span></dd>
         </dl>
         <div class="box gold"><b>Term structure at a glance</b>
-          <p>Fifteen weeks in four color-coded blocks: <span class="pill p-found">Foundations</span> weeks 1–2 · <span class="pill p-data">Data (ETV)</span> weeks 3–9 · <span class="pill p-cs">CS</span> weeks 10–12 · <span class="pill p-stat">STAT</span> weeks 13–15, followed by a cumulative final in finals week. Midterms are on Wednesday of weeks 5 and 9; the third is Wednesday of week 13 because Veterans Day falls on Wednesday of week 12.</p>
+          <p>Fifteen weeks in four color-coded blocks: <span class="pill p-found">Foundations</span> weeks 1–2 · <span class="pill p-data">Data (ETV)</span> weeks 3–9 · <span class="pill p-cs">CS</span> weeks 10–12 · <span class="pill p-stat">STAT</span> weeks 13–15, followed by a cumulative common final on Saturday, December 12. Midterms are on Wednesday of weeks 5 and 9; the third is Wednesday of week 13 because Veterans Day falls on Wednesday of week 12.</p>
         </div>
       </div>
     </section>
@@ -278,7 +278,7 @@
               <tr><td><span class="pill p-exam">ME1</span> Midterm 1</td><td class="num">6%</td><td>Wed, week 5 — <span data-field="schedule.midterm1_date" data-label="DATE"></span></td><td>1–4</td><td>Weeks 1–4</td></tr>
               <tr><td><span class="pill p-exam">ME2</span> Midterm 2</td><td class="num">8%</td><td>Wed, week 9 — <span data-field="schedule.midterm2_date" data-label="DATE"></span></td><td>5–8</td><td>Weeks 1–8</td></tr>
               <tr><td><span class="pill p-exam">ME3</span> Midterm 3</td><td class="num">11%</td><td>Wed, week 13 — <span data-field="schedule.midterm3_date" data-label="DATE"></span></td><td>9–12</td><td>Weeks 1–12</td></tr>
-              <tr><td><span class="pill p-exam">FE</span> Final Exam</td><td class="num">32.5%</td><td>Finals week — <span data-field="schedule.final_date" data-label="DATE / TIME"></span></td><td>all</td><td>All course material</td></tr>
+              <tr><td><span class="pill p-exam">FE</span> Common Final Exam</td><td class="num">32.5%</td><td><span data-field="schedule.final_date" data-label="DATE / TIME"></span></td><td>all</td><td>All course material</td></tr>
             </tbody>
           </table>
         </div>
@@ -303,7 +303,7 @@
             <ul>
               <li><strong>Purpose:</strong> demonstrate, without outside help, the skills practiced in the notes, drills, and labs.</li>
               <li><strong>All exams are cumulative.</strong> Once an outcome first appears on a midterm it stays eligible on every exam after, including the final. Each exam emphasizes its most recent weeks (see Section 6).</li>
-              <li><strong>Format:</strong> midterms are 20 questions, given on <strong>Wednesday</strong> of weeks 5, 9, and 13, and take <strong>60 minutes</strong>; 10–15 minutes of that class period is still devoted to a Check-In. The final is 35 questions in finals week.</li>
+              <li><strong>Format:</strong> midterms are 20 questions, given on <strong>Wednesday</strong> of weeks 5, 9, and 13, and take <strong>60 minutes</strong>; 10–15 minutes of that class period is still devoted to a Check-In. The common final is 35 questions on Saturday, December 12; the time is TBD.</li>
               <li><strong>Question types:</strong> exam and check-in questions come in 14 consistent forms. Types 1–4 <em>read</em> supplied code and critique it; types 5–14 <em>produce</em> — write, complete, predict, calculate, interpret, or reflect.</li>
               <li><strong>Materials allowed:</strong> <span data-field="assignments.exams.materials_allowed" data-label="MATERIALS ALLOWED"></span></li>
               <li><strong>Make-up exams:</strong> <span data-field="assignments.exams.makeup" data-label="MAKE-UP / MISSED-EXAM POLICY"></span></li>
@@ -403,7 +403,7 @@
               <tr class="break-row"><td class="ctr"><strong>Break</strong></td><td>Nov. 23–29</td><td>—</td><td colspan="4"><strong>Fall Break — no classes</strong></td></tr>
               <tr class="row-stat"><td class="ctr"><strong>14</strong></td><td><span data-field="schedule.week_dates.13" data-label="DATES"></span></td><td><span class="pill p-stat">STAT</span></td><td>Chi-square; .qmd #2</td><td>Interpretation; <em>Ethics: modeling</em></td><td>GOATs reuse — era × position</td><td>Lab · CI · Drills <span data-field="schedule.week_notes.13" data-optional></span></td></tr>
               <tr class="row-stat"><td class="ctr"><strong>15</strong></td><td><span data-field="schedule.week_dates.14" data-label="DATES"></span></td><td><span class="pill p-stat">STAT</span></td><td>Simple linear regression; .qmd #3; <em>Ethics: transparency / consequences</em></td><td>Capstone review</td><td>GOATs reuse — points ~ seasons</td><td>Lab · CI · Drills <span data-field="schedule.week_notes.14" data-optional></span></td></tr>
-              <tr class="row-exam"><td class="ctr"><strong>Finals</strong></td><td><span data-field="schedule.final_date" data-label="DATE &amp; TIME"></span></td><td><span class="pill p-exam">FE</span></td><td colspan="4"><strong>Final Exam</strong> — cumulative, all course material, 35 questions · <span data-field="course.final_exam_location" data-label="LOCATION"></span></td></tr>
+              <tr class="row-exam"><td class="ctr"><strong>Final</strong></td><td><span data-field="schedule.final_date" data-label="DATE &amp; TIME"></span></td><td><span class="pill p-exam">FE</span></td><td colspan="4"><strong>Common Final Exam</strong> — cumulative, all course material, 35 questions · <span data-field="course.final_exam_location" data-label="LOCATION"></span></td></tr>
             </tbody>
           </table>
         </div>
@@ -416,7 +416,7 @@
               <tr><td><span class="pill p-exam">ME1</span> Midterm 1 (weeks 1–4)</td><td>Wednesday, week 5</td><td><span data-field="schedule.midterm1_date" data-label="DATE"></span></td></tr>
               <tr><td><span class="pill p-exam">ME2</span> Midterm 2 (weeks 1–8)</td><td>Wednesday, week 9</td><td><span data-field="schedule.midterm2_date" data-label="DATE"></span></td></tr>
               <tr><td><span class="pill p-exam">ME3</span> Midterm 3 (weeks 1–12)</td><td>Wednesday, week 13</td><td><span data-field="schedule.midterm3_date" data-label="DATE"></span></td></tr>
-              <tr><td><span class="pill p-exam">FE</span> Final Exam (all material)</td><td>Finals week</td><td><span data-field="schedule.final_date" data-label="DATE &amp; TIME"></span></td></tr>
+              <tr><td><span class="pill p-exam">FE</span> Common Final Exam (all material)</td><td>Saturday after classes end</td><td><span data-field="schedule.final_date" data-label="DATE &amp; TIME"></span></td></tr>
               <tr><td><span class="pill p-lab">L</span> Labs 1–15</td><td>Weekly</td><td><span data-field="schedule.lab_due" data-label="DUE DAY / TIME"></span></td></tr>
               <tr><td><span class="pill p-drill">D</span> Drills</td><td>~4 per week, all term</td><td><span data-field="schedule.drill_deadline" data-label="WEEKLY DEADLINE"></span></td></tr>
               <tr><td><span class="pill p-ci">CI</span> Check-Ins</td><td>In class, most meetings</td><td>—</td></tr>

@@ -24,7 +24,7 @@ course:
   meeting_days: "Monday & Wednesday"
   meeting_time: "7:30-8:50 AM, 9:00-10:20 AM, 10:30-11:50 AM"          # e.g., 2:10–4:00 PM
   location: "38-122 (Math & Science 38)"              # building – room
-  final_exam: "December 14–18, 2026 — exact date and time to be announced"  # day, date & time of the final
+  final_exam: "Common Final — Saturday, December 12, 2026; time TBD"  # day, date & time of the final
   final_exam_location: "TBD"
   prerequisites: "One of the following: DATA/STAT 1000, STAT 130, STAT 217, STAT 218, STAT 252, STAT 301, STAT 312, STAT 1110, STAT 1220, STAT 1510, or STAT 3210.
 "         # exactly as in the catalog, or "None"
@@ -157,10 +157,10 @@ schedule:
   midterm1_date: "September 23, 2026"  # Wednesday of week 5
   midterm2_date: "October 21, 2026"    # Wednesday of week 9
   midterm3_date: "November 18, 2026"   # moved to Wednesday of week 13; Nov. 11 is Veterans Day
-  final_date: "December 14–18, 2026 — exact date and time to be announced"
+  final_date: "Saturday, December 12, 2026 — time TBD"
   lab_due: ""               # weekly lab due day/time
   drill_deadline: ""        # weekly drill deadline
-  other_deadlines: "Labor Day: Sept. 7 (no class) · Veterans Day: Nov. 11 (no class) · Fall Break: Nov. 23–29 · Last day of classes: Dec. 11 · Finals: Dec. 14–18"
+  other_deadlines: "Labor Day: Sept. 7 (no class) · Veterans Day: Nov. 11 (no class) · Fall Break: Nov. 23–29 · Last day of classes: Dec. 11 · Common Final: Dec. 12 (time TBD)"
   # Optional: put per-week notes here (holiday, no class, guest speaker). Same order as week_dates.
   week_notes:
     - ""   # week 1
