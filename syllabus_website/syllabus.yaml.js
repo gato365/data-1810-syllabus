@@ -182,20 +182,31 @@ schedule:
 
 policies:
   attendance: |
-    # (paragraph) attendance and missed Check-Ins — how many are dropped, make-ups, excused absences
-  late_work: |
-    # (paragraph) late and missing work — grace period, per-day penalty, drops, extension procedure, missed exams
-  ai_labs: ""               # AI on labs is permitted — how must it be disclosed/cited? what stays your responsibility?
-  ai_exams_checkins: ""     # AI on exams and check-ins (expected: not permitted)
-  ai_drills: ""             # AI on drills
-  ai_statement: |
-    Artificial intelligence will be used in this course to enhance learning—not replace it. You are encouraged to use AI to investigate ideas, clarify concepts, explore alternative solutions, troubleshoot code, and ask deeper questions. However, you remain responsible for understanding any work you submit and for developing the ability to reason, communicate, and program independently.
+    Attendance is required because each class meeting includes important instruction, practice, and in-class assessment activities. Check-ins may occur at any point during class and must be completed in class. There are two types: self check-ins and collaborative check-ins.
 
-    Our shared goal is to use AI thoughtfully, responsibly, and collegially so that everyone can maximize this learning experience. By engaging seriously with the labs, drills, check-ins, and assessments, you will develop a strong foundation in R programming while applying important ideas from data science, statistics, and computer science.
+    The four lowest check-in scores will be dropped—two self check-ins and two collaborative check-ins. These drops account for occasional absences, illnesses, emergencies, or other unavoidable conflicts. You may miss up to four check-ins without a direct effect on your check-in grade, provided the missed check-ins remain within the two-drop limit for each type. Missing additional check-ins may lower your grade. Check-ins generally cannot be completed outside class or made up.
+  late_work: |
+    Labs must be submitted through Canvas by the stated deadlines. Complete your work in an individual Quarto (.qmd) file, but submit the answers used for grading through Canvas. Maintaining a completed .qmd file does not replace the required Canvas submission.
+
+    Late labs and extensions will be considered only under extreme circumstances. If you need an extension, email the instructor at least one full day before the deadline whenever possible and briefly explain the circumstances. A request does not guarantee approval. Requests made after the deadline generally will not be accepted unless an unexpected emergency made advance communication impossible.
+  missed_exams: |
+    Exam dates are firm. If a known event, obligation, or conflict will prevent you from taking an exam as scheduled, notify the instructor at least two weeks in advance.
+
+    If you become sick or experience an unexpected emergency, contact the instructor as soon as possible—preferably the day before the exam, but no later than the day of the exam. Missed exams will be addressed individually according to the circumstances and applicable university policies. Notification does not automatically guarantee an alternative exam arrangement.
+  ai_labs: "AI tools may be used to support learning and problem-solving. You remain responsible for understanding, reviewing, and being able to explain everything you submit."
+  ai_checkins: "AI tools are not permitted."
+  ai_drills: "AI tools are not permitted."
+  ai_exams: "AI tools are not permitted."
+  ai_statement: |
+    Using AI on an activity for which it is prohibited will be treated as an academic-integrity concern. Ask the instructor before using an AI tool if you are uncertain whether its use is permitted.
   academic_integrity: |
-    # (paragraph) academic integrity / collaboration policy and consequences
+    Academic integrity is essential to both individual learning and the trust of our classroom community. You must submit your own work, avoid copying or looking at another student’s work during individual activities, and use artificial intelligence only when it is expressly permitted. Receiving unauthorized assistance may produce an answer, but it prevents you from developing the reasoning, technical skills, and judgment that this course is designed to cultivate.
+
+    Adhering to these expectations supports your growth as a student and as a future statistician, data scientist, or other data-informed professional. All suspected academic-integrity violations will be addressed according to course and university policies.
   dei: |
-    # (paragraph) diversity, equity, inclusion, and classroom respect statement
+    I am committed to creating a learning environment that is respectful, inclusive, and equitable for students with different identities, backgrounds, experiences, and perspectives. I will continue working to ensure that course materials, examples, activities, and classroom practices represent a range of experiences and provide meaningful opportunities for all students to participate and learn.
+
+    Data science is not separate from questions of ethics, equity, and social responsibility. Throughout the course, we will consider how data are collected, represented, analyzed, and communicated, as well as how these decisions may affect different individuals and communities. You are expected to engage with these discussions thoughtfully and respectfully.
   success_extra: |
     # (bullets, optional) extra advice, office-hour encouragement, tutoring / stat-lab resources
   extra_credit:
@@ -208,7 +219,9 @@ policies:
   trips_events: ""          # course-related trips / special events, or "None planned"
   incentives: ""            # stickers or other course incentives, or "None"
   drc: |
-    # (paragraph) Cal Poly Disability Resource Center (DRC) accommodations statement
+    Students who need disability-related accommodations should contact Cal Poly’s Disability Resource Center (DRC) and provide the appropriate accommodation information to the instructor as early as possible. I will work with the student and the DRC to implement approved accommodations while maintaining the course’s learning objectives. Students are encouraged to communicate early so accommodations can be arranged before an assignment, check-in, or exam.
+
+    It is University policy to provide, on a flexible and individualized basis, reasonable accommodations to students who have disabilities that may affect their ability to participate in course activities or meet course requirements. If you have a disability for which you are or may be requesting an accommodation, contact both your instructor and the Disability Resource Center, Building 124, Room 119, at (805) 756-1395 as early as possible in the term. Use of DRC services, including testing accommodations, requires prior authorization by the DRC and compliance with approved procedures.
   changes: |
     The instructor reserves the right to adjust the schedule, assignments, and policies as needed;
     any changes will be announced in class and posted on the course site. This syllabus is the
