@@ -180,6 +180,7 @@ button.btn.ghost:hover { background: rgba(255,255,255,.12); }
 .dataset-list strong { color: var(--cp-green-dark); }
 .dataset-list span { flex: 0 0 auto; padding: 2px 8px; border-radius: 999px; background: rgba(255,255,255,.8); color: var(--muted); font-size: .76rem; font-weight: 800; text-transform: uppercase; letter-spacing: .03em; }
 @media (max-width: 620px) { .dataset-list { grid-template-columns: 1fr; } .sub-btn .sub-meta { display: none; } }
+.calendar-source { padding: 9px 12px; border-left: 4px solid var(--cp-gold); background: var(--cp-gold-light); color: var(--muted); font-size: .9rem; }
 .kv { display: grid; grid-template-columns: max-content 1fr; gap: 6px 16px; margin: 12px 0; }
 .kv dt { font-weight: 700; color: var(--muted); }
 .kv dd { margin: 0; }
@@ -210,6 +211,9 @@ tr.row-data  td:first-child { border-left: 4px solid var(--data); }
 tr.row-cs    td:first-child { border-left: 4px solid var(--cs); }
 tr.row-stat  td:first-child { border-left: 4px solid var(--stat); }
 tr.row-exam  { background: var(--exam-bg); }
+.holiday-row td { background: #fff7ed; }
+.holiday-row td:first-child { border-left-color: var(--found) !important; }
+.break-row td { background: var(--cp-gold-light); color: var(--cp-green-dark); text-align: center; }
 td.exam-cell { background: var(--exam-bg); }
 tr.total td { font-weight: 800; background: var(--cp-gold-light); }
 .bar-track { height: 10px; background: #e2e8f0; border-radius: 999px; overflow: hidden; min-width: 90px; }

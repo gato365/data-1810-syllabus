@@ -24,7 +24,7 @@ course:
   meeting_days: "Monday & Wednesday"
   meeting_time: "7:30-8:50 AM, 9:00-10:20 AM, 10:30-11:50 AM"          # e.g., 2:10–4:00 PM
   location: "38-122 (Math & Science 38)"              # building – room
-  final_exam: "Common Final - December 12, Time: TBD"            # day, date & time of the final (finals week)
+  final_exam: "December 14–18, 2026 — exact date and time to be announced"  # day, date & time of the final
   final_exam_location: "TBD"
   prerequisites: "One of the following: DATA/STAT 1000, STAT 130, STAT 217, STAT 218, STAT 252, STAT 301, STAT 312, STAT 1110, STAT 1220, STAT 1510, or STAT 3210.
 "         # exactly as in the catalog, or "None"
@@ -139,33 +139,33 @@ assignments:
 schedule:
   # One entry per week (15) — e.g., "Sep 22 & 24"
   week_dates:
-    - ""   # week 1
-    - ""   # week 2
-    - ""   # week 3
-    - ""   # week 4
-    - ""   # week 5
-    - ""   # week 6
-    - ""   # week 7
-    - ""   # week 8
-    - ""   # week 9
-    - ""   # week 10
-    - ""   # week 11
-    - ""   # week 12
-    - ""   # week 13
-    - ""   # week 14
-    - ""   # week 15
-  midterm1_date: ""         # Wednesday of week 5
-  midterm2_date: ""         # Wednesday of week 9
-  midterm3_date: ""         # Wednesday of week 12
-  final_date: ""            # finals week — date & time (can repeat course.final_exam)
+    - "Aug. 24 & 26"                # week 1
+    - "Aug. 31 & Sept. 2"           # week 2
+    - "Sept. 7 (no class) & 9"      # week 3
+    - "Sept. 14 & 16"               # week 4
+    - "Sept. 21 & 23"               # week 5
+    - "Sept. 28 & 30"               # week 6
+    - "Oct. 5 & 7"                  # week 7
+    - "Oct. 12 & 14"                # week 8
+    - "Oct. 19 & 21"                # week 9
+    - "Oct. 26 & 28"                # week 10
+    - "Nov. 2 & 4"                  # week 11
+    - "Nov. 9 & 11 (no class)"      # week 12
+    - "Nov. 16 & 18"                # week 13
+    - "Nov. 30 & Dec. 2"            # week 14 (after Fall Break)
+    - "Dec. 7 & 9"                  # week 15
+  midterm1_date: "September 23, 2026"  # Wednesday of week 5
+  midterm2_date: "October 21, 2026"    # Wednesday of week 9
+  midterm3_date: "November 18, 2026"   # moved to Wednesday of week 13; Nov. 11 is Veterans Day
+  final_date: "December 14–18, 2026 — exact date and time to be announced"
   lab_due: ""               # weekly lab due day/time
   drill_deadline: ""        # weekly drill deadline
-  other_deadlines: ""       # add/drop deadline, withdrawal deadline, holidays / no-class days
+  other_deadlines: "Labor Day: Sept. 7 (no class) · Veterans Day: Nov. 11 (no class) · Fall Break: Nov. 23–29 · Last day of classes: Dec. 11 · Finals: Dec. 14–18"
   # Optional: put per-week notes here (holiday, no class, guest speaker). Same order as week_dates.
   week_notes:
     - ""   # week 1
     - ""   # week 2
-    - ""   # week 3
+    - "Labor Day — no class Monday, Sept. 7"   # week 3
     - ""   # week 4
     - ""   # week 5
     - ""   # week 6
@@ -174,9 +174,9 @@ schedule:
     - ""   # week 9
     - ""   # week 10
     - ""   # week 11
-    - ""   # week 12
-    - ""   # week 13
-    - ""   # week 14
+    - "Veterans Day — no class Wednesday, Nov. 11"   # week 12
+    - "Midterm 3 on Wednesday, Nov. 18"   # week 13
+    - "Fall Break was Nov. 23–29"   # week 14
     - ""   # week 15
 
 policies:
