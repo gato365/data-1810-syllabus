@@ -178,43 +178,72 @@
     <section class="acc c5" id="s5">
       <h2><button class="acc-btn" type="button" aria-expanded="false" aria-controls="p5"><span class="acc-num">5</span><span class="acc-title">Course Materials</span><svg class="acc-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></h2>
       <div class="acc-panel" id="p5" hidden>
-        <h3>Textbook</h3>
-        <div class="box green"><b>Required / recommended text</b>
-          <div data-field="materials.textbook" data-fmt="rich" data-label="TEXTBOOK (title, author, edition, ISBN/URL, required or recommended)"></div>
+        <p class="material-intro">Select a topic to view its details.</p>
+
+        <div class="subacc material green">
+          <button class="sub-btn" type="button" aria-expanded="false" aria-controls="m-textbooks"><span class="material-icon" aria-hidden="true">📚</span> Textbooks &amp; readings<span class="sub-meta">3 free online resources</span><svg class="acc-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <div class="sub-panel" id="m-textbooks" hidden>
+            <div data-field="materials.textbook" data-fmt="rich" data-label="TEXTBOOK (title, author, edition, ISBN/URL, required or recommended)"></div>
+          </div>
         </div>
 
-        <h3>Install R &amp; Positron</h3>
-        <div class="box found install-guide">
-          <b>Complete these steps before the first class</b>
-          <div data-field="materials.install_instructions" data-fmt="rich" data-label="R + POSITRON INSTALLATION STEPS"></div>
+        <div class="subacc material found">
+          <button class="sub-btn" type="button" aria-expanded="false" aria-controls="m-install"><span class="material-icon" aria-hidden="true">💻</span> Install R &amp; Positron<span class="sub-meta">complete before the first class</span><svg class="acc-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <div class="sub-panel" id="m-install" hidden>
+            <div class="install-guide">
+              <div data-field="materials.install_instructions" data-fmt="rich" data-label="R + POSITRON INSTALLATION STEPS"></div>
+            </div>
+          </div>
         </div>
 
-        <h3>Software &amp; technology</h3>
-        <div class="grid2">
-          <div class="box found"><b>R + Positron</b><p>All coursework is done in R using the Positron IDE with project-based file management (<code>R/</code> for scripts, <code>Data/</code> for raw and processed data). <span data-field="materials.laptop_policy" data-label="LAPTOP POLICY"></span></p></div>
-          <div class="box data"><b>Quarto</b><p>Labs and STAT-block reports are written as Quarto (<code>.qmd</code>) documents; labs progress from fill-in-the-blank scaffolds to documents built from scratch.</p></div>
-          <div class="box drill"><b>Drill app</b><p>Spaced-review drills are completed in the course drill app (~4×/week, 5–20 minutes each). You will receive a token/name and the rules in week 1. <span data-field="materials.drill_app_access" data-label="DRILL APP URL / ACCESS"></span></p></div>
-          <div class="box gray"><b>Course site &amp; videos</b><p><span data-link-field="course.course_site_url" data-label-field="course.course_site_label" data-label="COURSE SITE LINK"></span> for notes, videos (NV), labs, and grades. Class notes (NC) are delivered in lecture; videos reinforce.</p></div>
+        <div class="subacc material data">
+          <button class="sub-btn" type="button" aria-expanded="false" aria-controls="m-software"><span class="material-icon" aria-hidden="true">🧰</span> Software &amp; technology<span class="sub-meta">four course tools</span><svg class="acc-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <div class="sub-panel" id="m-software" hidden>
+            <div class="grid2 tech-grid">
+              <div class="box found"><b>R + Positron</b><p>All coursework is done in R using the Positron IDE with project-based file management (<code>R/</code> for scripts, <code>Data/</code> for raw and processed data). <span data-field="materials.laptop_policy" data-label="LAPTOP POLICY"></span></p></div>
+              <div class="box data"><b>Quarto</b><p>Labs and STAT-block reports are written as Quarto (<code>.qmd</code>) documents; labs progress from fill-in-the-blank scaffolds to documents built from scratch.</p></div>
+              <div class="box drill"><b>Drill app</b><p>Spaced-review drills are completed in the course drill app (~4×/week, 5–20 minutes each). You will receive a token/name and the rules in week 1. <span data-field="materials.drill_app_access" data-label="DRILL APP URL / ACCESS"></span></p></div>
+              <div class="box gray"><b>Course site &amp; videos</b><p><span data-link-field="course.course_site_url" data-label-field="course.course_site_label" data-label="COURSE SITE LINK"></span> for notes, videos (NV), labs, and grades. Class notes (NC) are delivered in lecture; videos reinforce.</p></div>
+            </div>
+          </div>
         </div>
 
-        <h3>R packages used in the course</h3>
-        <div class="tbl-scroll">
-          <table>
-            <thead><tr><th>Purpose</th><th>Packages</th><th>Block</th></tr></thead>
-            <tbody>
-              <tr><td>Core / meta-package</td><td><code>tidyverse</code></td><td><span class="pill p-found">Foundations</span></td></tr>
-              <tr><td>Extract (import) &amp; export</td><td><code>readr</code>, <code>readxl</code>, <code>openxlsx</code>, <code>httr2</code> (APIs), <code>htmltab</code> (web scraping)</td><td><span class="pill p-data">Data</span></td></tr>
-              <tr><td>Transform (clean &amp; manage)</td><td><code>dplyr</code>, <code>tidyr</code>, <code>stringr</code>, <code>lubridate</code>, <code>janitor</code>, <code>forcats</code></td><td><span class="pill p-data">Data</span></td></tr>
-              <tr><td>Visualize</td><td><code>ggplot2</code>, <code>scales</code></td><td><span class="pill p-data">Data</span></td></tr>
-              <tr><td>Iteration &amp; functions</td><td>base R control flow, <code>purrr</code>, writing functions</td><td><span class="pill p-cs">CS</span></td></tr>
-              <tr><td>Reproducible documents</td><td><code>rmarkdown</code>, <code>knitr</code>, Quarto</td><td><span class="pill p-data">Data</span></td></tr>
-              <tr><td>Statistical inference</td><td>base R (ANOVA, chi-square, simple linear regression)</td><td><span class="pill p-stat">STAT</span></td></tr>
-            </tbody>
-          </table>
+        <div class="subacc material cs">
+          <button class="sub-btn" type="button" aria-expanded="false" aria-controls="m-packages"><span class="material-icon" aria-hidden="true">📦</span> R packages used in the course<span class="sub-meta">organized by purpose</span><svg class="acc-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <div class="sub-panel" id="m-packages" hidden>
+            <div class="tbl-scroll">
+              <table>
+                <thead><tr><th>Purpose</th><th>Packages</th><th>Block</th></tr></thead>
+                <tbody>
+                  <tr><td>Core / meta-package</td><td><code>tidyverse</code></td><td><span class="pill p-found">Foundations</span></td></tr>
+                  <tr><td>Extract (import) &amp; export</td><td><code>readr</code>, <code>readxl</code>, <code>openxlsx</code>, <code>httr2</code> (APIs), <code>htmltab</code> (web scraping)</td><td><span class="pill p-data">Data</span></td></tr>
+                  <tr><td>Transform (clean &amp; manage)</td><td><code>dplyr</code>, <code>tidyr</code>, <code>stringr</code>, <code>lubridate</code>, <code>janitor</code>, <code>forcats</code></td><td><span class="pill p-data">Data</span></td></tr>
+                  <tr><td>Visualize</td><td><code>ggplot2</code>, <code>scales</code></td><td><span class="pill p-data">Data</span></td></tr>
+                  <tr><td>Iteration &amp; functions</td><td>base R control flow, <code>purrr</code>, writing functions</td><td><span class="pill p-cs">CS</span></td></tr>
+                  <tr><td>Reproducible documents</td><td><code>rmarkdown</code>, <code>knitr</code>, Quarto</td><td><span class="pill p-data">Data</span></td></tr>
+                  <tr><td>Statistical inference</td><td>base R (ANOVA, chi-square, simple linear regression)</td><td><span class="pill p-stat">STAT</span></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
         </div>
 
-        <h3>Datasets &amp; other materials</h3>
-        <p>The whole term runs on about seven real datasets, reused only when reuse adds a new question or skill: Coffee (CSV), Kobe game log (Excel), Fast-food menu (CSV), SLO crime log (CSV), U.S. Counties (web scrape), Weather / Open-Meteo (API), and NBA GOATs (Excel). All data are provided through the course site. <span data-field="materials.other_supplies" data-label="OTHER SUPPLIES / MATERIALS"></span></p>
+        <div class="subacc material stat">
+          <button class="sub-btn" type="button" aria-expanded="false" aria-controls="m-datasets"><span class="material-icon" aria-hidden="true">📊</span> Datasets &amp; other materials<span class="sub-meta">seven real datasets</span><svg class="acc-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <div class="sub-panel" id="m-datasets" hidden>
+            <p>The term uses real datasets, revisited only when reuse adds a new question or skill. All data are provided through the course site.</p>
+            <ul class="dataset-list">
+              <li class="coffee"><strong>Coffee sales</strong><span>CSV</span></li>
+              <li class="kobe"><strong>Kobe Bryant game log</strong><span>Excel</span></li>
+              <li class="food"><strong>Fast-food menu</strong><span>CSV</span></li>
+              <li class="crime"><strong>SLO crime log</strong><span>CSV</span></li>
+              <li class="counties"><strong>U.S. Counties</strong><span>Web scrape</span></li>
+              <li class="weather"><strong>Weather / Open-Meteo</strong><span>API</span></li>
+              <li class="nba"><strong>NBA GOATs</strong><span>Excel</span></li>
+            </ul>
+            <p><strong>Other supplies:</strong> <span data-field="materials.other_supplies" data-label="OTHER SUPPLIES / MATERIALS"></span></p>
+          </div>
+        </div>
       </div>
     </section>
 

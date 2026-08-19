@@ -64,20 +64,31 @@ materials:
     4. **Bring your laptop to class.** If installation does not work, bring your laptop and charger to the first class so we can help you finish the setup.
   laptop_policy: "**You should bring a laptop to every class**"         # e.g., "Bring a laptop to every class"
   drill_app_access: ""      # URL / how to log in
-  other_supplies: ""        # anything else, or "None"
+  other_supplies: "None"        # anything else, or "None"
 
 grading:
   # Point values per category (leave "" if you grade by weighted percentage only)
   points:
-    final: ""
-    midterms: ""
-    checkins_self: ""
-    checkins_collab: ""
-    labs: ""
-    drills: ""
-    total: ""
+    final: 325
+    midterms: 250
+    checkins_self: 150
+    checkins_collab: 100
+    labs: 100
+    drills: 75
+    total: 1000
   # Letter-grade cutoffs — add or remove rows as needed
-  grade_scale: []
+  grade_scale:
+    - { letter: "A+", range: "97–100" }
+    - { letter: "A",  range: "93–96.9" }
+    - { letter: "A−", range: "90–92.9" }
+    - { letter: "B+", range: "87–89.9" }
+    - { letter: "B",  range: "83–86.9" }
+    - { letter: "B−", range: "80–82.9" }
+    - { letter: "C+", range: "77–79.9" }
+    - { letter: "C",  range: "73–76.9" }
+    - { letter: "C−", range: "70–72.9" }
+    - { letter: "D",  range: "60–69.9" }
+    - { letter: "F",  range: "below 60" }
   # grade_scale:
   #   - { letter: "A",  range: "93–100" }
   #   - { letter: "A−", range: "90–92.9" }

@@ -127,6 +127,13 @@ button.btn.ghost:hover { background: rgba(255,255,255,.12); }
 .subacc.ci    { --box-color: var(--ci);    --box-bg: var(--ci-bg); }
 .subacc.lab   { --box-color: var(--lab);   --box-bg: var(--lab-bg); }
 .subacc.drill { --box-color: var(--drill); --box-bg: var(--drill-bg); }
+.subacc.material.green { --box-color: var(--cp-green); --box-bg: var(--cp-green-light); }
+.subacc.material.found { --box-color: var(--found); --box-bg: var(--found-bg); }
+.subacc.material.data  { --box-color: var(--data); --box-bg: var(--data-bg); }
+.subacc.material.cs    { --box-color: var(--cs); --box-bg: var(--cs-bg); }
+.subacc.material.stat  { --box-color: var(--stat); --box-bg: var(--stat-bg); }
+.material-intro { margin: 14px 0 10px; color: var(--muted); }
+.material-icon { width: 26px; text-align: center; font-size: 1.15rem; }
 .desc { border-left: 3px solid var(--box-color, var(--cp-gold)); padding: 2px 0 2px 12px; margin: 6px 0 12px; }
 .desc .desc-label { display: block; font-size: .75rem; text-transform: uppercase; letter-spacing: .08em; font-weight: 800; color: var(--muted); margin-bottom: 2px; }
 
@@ -154,8 +161,17 @@ button.btn.ghost:hover { background: rgba(255,255,255,.12); }
 .install-guide a { font-weight: 700; }
 .grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 12px; }
 .grid2 .box { margin: 0; }
+.tech-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .course-block-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-@media (max-width: 700px) { .course-block-grid { grid-template-columns: 1fr; } }
+@media (max-width: 700px) { .course-block-grid, .tech-grid { grid-template-columns: 1fr; } }
+.dataset-list { list-style: none; margin: 14px 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 9px; }
+.dataset-list li { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 10px 12px; border-left: 5px solid var(--data); border-radius: 7px; background: var(--data-bg); }
+.dataset-list li:nth-child(4n+2) { border-color: var(--cs); background: var(--cs-bg); }
+.dataset-list li:nth-child(4n+3) { border-color: var(--stat); background: var(--stat-bg); }
+.dataset-list li:nth-child(4n+4) { border-color: var(--found); background: var(--found-bg); }
+.dataset-list strong { color: var(--cp-green-dark); }
+.dataset-list span { flex: 0 0 auto; padding: 2px 8px; border-radius: 999px; background: rgba(255,255,255,.8); color: var(--muted); font-size: .76rem; font-weight: 800; text-transform: uppercase; letter-spacing: .03em; }
+@media (max-width: 620px) { .dataset-list { grid-template-columns: 1fr; } .sub-btn .sub-meta { display: none; } }
 .kv { display: grid; grid-template-columns: max-content 1fr; gap: 6px 16px; margin: 12px 0; }
 .kv dt { font-weight: 700; color: var(--muted); }
 .kv dd { margin: 0; }
