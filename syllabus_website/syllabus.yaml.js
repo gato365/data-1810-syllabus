@@ -216,8 +216,8 @@ policies:
     visual: |
       **Visual Opportunity.** There is a picture in the picture frame. During learning hours, I will randomly display the picture frame two days each week. If you see it, take a picture and complete the survey. I will award the extra-credit points at the end of the quarter. The number of points will be determined at the end of the quarter.
     visual_survey_url: "https://forms.gle/q3qj1nvDTBWgdK6B8"
-  trips_events: ""          # course-related trips / special events, or "None planned"
-  incentives: ""            # stickers or other course incentives, or "None"
+  trips_events: "None Planned"          # course-related trips / special events, or "None planned"
+  incentives: "None"            # stickers or other course incentives, or "None"
   drc: |
     Students who need disability-related accommodations should contact Cal Poly’s Disability Resource Center (DRC) and provide the appropriate accommodation information to the instructor as early as possible. I will work with the student and the DRC to implement approved accommodations while maintaining the course’s learning objectives. Students are encouraged to communicate early so accommodations can be arranged before an assignment, check-in, or exam.
 
