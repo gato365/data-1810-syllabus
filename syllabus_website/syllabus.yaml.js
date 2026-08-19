@@ -199,11 +199,11 @@ policies:
     # (bullets, optional) extra advice, office-hour encouragement, tutoring / stat-lab resources
   extra_credit:
     see_me: |
-      **See Me Opportunity.** If you see me outside of class, ask me about the See Me Opportunity and complete the brief survey. This is a small extra-credit opportunity designed to encourage connection and conversation beyond scheduled class time.
-    see_me_survey_url: ""
+      **You Do Know Me.** If you see me on campus, you know me! Ask me a statistical question, then complete the survey. I will award the extra-credit points at the end of the quarter. The number of points will be determined at the end of the quarter.
+    see_me_survey_url: "https://forms.gle/vjdDM8Y7xMDS1LkFA"
     visual: |
-      **Visual Opportunity.** Come to learning hours and ask a course-related question. After we discuss your question, ask, **“Can I see the Visual Opportunity?”** Then complete the brief survey to receive the extra-credit opportunity.
-    visual_survey_url: ""
+      **Visual Opportunity.** There is a picture in the picture frame. During learning hours, I will randomly display the picture frame two days each week. If you see it, take a picture and complete the survey. I will award the extra-credit points at the end of the quarter. The number of points will be determined at the end of the quarter.
+    visual_survey_url: "https://forms.gle/q3qj1nvDTBWgdK6B8"
   trips_events: ""          # course-related trips / special events, or "None planned"
   incentives: ""            # stickers or other course incentives, or "None"
   drc: |
