@@ -146,6 +146,12 @@ button.btn.ghost:hover { background: rgba(255,255,255,.12); }
 .box.gray  { --box-color: var(--gray);  --box-bg: #f1f5f9; }
 .box.green { --box-color: var(--cp-green); --box-bg: var(--cp-green-light); }
 .box.gold  { --box-color: var(--cp-gold-dark); --box-bg: var(--cp-gold-light); }
+.install-guide { padding: 20px 22px; }
+.install-guide > b { display: block; font-size: 1.05rem; margin-bottom: 12px; }
+.install-guide ol { margin: 0; padding: 0; list-style: none; counter-reset: install-step; display: grid; gap: 10px; }
+.install-guide li { counter-increment: install-step; position: relative; min-height: 34px; padding: 7px 10px 7px 46px; background: rgba(255,255,255,.72); border: 1px solid var(--found-line); border-radius: 8px; }
+.install-guide li::before { content: counter(install-step); position: absolute; left: 9px; top: 6px; display: grid; place-items: center; width: 28px; height: 28px; border-radius: 50%; color: #fff; background: var(--found); font-weight: 800; }
+.install-guide a { font-weight: 700; }
 .grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 12px; }
 .grid2 .box { margin: 0; }
 .course-block-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }

@@ -54,9 +54,15 @@ purpose:
 
 materials:
   textbook: |
-    # (paragraph) title, author, edition, ISBN/URL, required vs. recommended — or "No textbook required"
-  install_instructions: ""  # link or short note on installing R + Positron
-  laptop_policy: ""         # e.g., "Bring a laptop to every class"
+    - [R is Your Friend](https://r-is-your-friend.github.io/course-pack/) — setup, R basics, control flow, functions, tidyverse, visualization, data wrangling, projects, and file paths.
+    - [R for Data Science, 2nd edition (R4DS)](https://r4ds.hadley.nz/) by Hadley Wickham, Mine Çetinkaya-Rundel, and Garrett Grolemund — data import, transformation, visualization, tidying, joins, strings, factors, dates, spreadsheets, and Quarto.
+    - [Introduction to Modern Statistics (OpenIntro)](https://openintrostat.github.io/ims/) — specifically the linear-regression material in §7.1.1–7.1.3.
+  install_instructions: |
+    1. **Install R.** Open the [R download page](https://cloud.r-project.org/), choose your operating system, and install the latest version.
+    2. **Install Positron.** Download and install [Positron](https://posit.co/download/positron/), the program we will use to write and run R code.
+    3. **Check your setup.** Open Positron, start an R console, type **1 + 1**, and press Enter. If the console returns **2**, you are ready.
+    4. **Bring your laptop to class.** If installation does not work, bring your laptop and charger to the first class so we can help you finish the setup.
+  laptop_policy: "**You should bring a laptop to every class**"         # e.g., "Bring a laptop to every class"
   drill_app_access: ""      # URL / how to log in
   other_supplies: ""        # anything else, or "None"
 

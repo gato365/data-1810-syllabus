@@ -51,21 +51,25 @@
   function esc(s) {
     return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
   }
-  /* inline mini-markdown: **bold**, `code`, bare URLs */
+  /* inline mini-markdown: **bold**, `code`, [links](URL), bare URLs */
   function inline(s) {
     var h = esc(s);
     h = h.replace(/`([^`]+)`/g, "<code>$1</code>");
     h = h.replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>");
+    h = h.replace(/\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>');
     h = h.replace(/(^|[\s(])((?:https?:\/\/)[^\s)<]+)/g, '$1<a href="$2">$2</a>');
     return h;
   }
-  /* rich text: blank-line paragraphs; "- " bullet lists */
+  /* rich text: blank-line paragraphs, bullet lists, and numbered lists */
   function rich(s) {
     var blocks = s.split(/\n\s*\n/);
     return blocks.map(function (b) {
       var lines = b.split(/\n/).map(function (l) { return l.replace(/^\s+|\s+$/g, ""); }).filter(Boolean);
       if (lines.length && lines.every(function (l) { return /^[-*•]\s+/.test(l); })) {
         return "<ul>" + lines.map(function (l) { return "<li>" + inline(l.replace(/^[-*•]\s+/, "")) + "</li>"; }).join("") + "</ul>";
+      }
+      if (lines.length && lines.every(function (l) { return /^\d+[.)]\s+/.test(l); })) {
+        return "<ol>" + lines.map(function (l) { return "<li>" + inline(l.replace(/^\d+[.)]\s+/, "")) + "</li>"; }).join("") + "</ol>";
       }
       return "<p>" + inline(lines.join(" ")) + "</p>";
     }).join("");
