@@ -39,9 +39,9 @@ instructor:
   office: "25-113"                # building – room
   office_hours: "MW 2:00 - 3:15 pm"          # days & times
   office_hours_mode: "in person"     # in person / Zoom link
-  preferred_contact: "Email"     # e.g., Email; expect a reply within 24 hours on weekdays
+  preferred_contact: "Canvas Inbox"     # e.g., Email; expect a reply within 24 hours on weekdays
   communication_expectations: |
-    When emailing me, **introduce yourself and include your course/section**, then use a clear subject line such as **“DATA 1810 – Assignment 3 Question.”** Email is best for brief questions or administrative matters; use **office hours** for detailed explanations, code help, or longer discussions. Please include enough context in your message so I can respond efficiently.
+    Send all course-related messages through the **Canvas Inbox** using the Cal Poly email address associated with your Canvas account. **Do not use a personal email account, including Gmail or Yahoo.** Introduce yourself and include your course/section, then use a clear subject line such as **“DATA 1810 – Assignment 3 Question.”** Canvas messages are best for brief questions or administrative matters; use **office hours** for detailed explanations, code help, or longer discussions. Please include enough context in your message so I can respond efficiently.
 
 
 purpose:
@@ -106,6 +106,8 @@ assignments:
   exams:
     description: |
       Each exam combines Canvas questions with paper-and-pencil questions. Approximately 10%–25% of the questions will be completed through Canvas, and the remaining 75%–90% will be completed using paper and pencil. You are responsible for bringing any required materials and arriving prepared to complete both portions.
+    practice_exams: |
+      A practice exam will be distributed on the Saturday before each Wednesday midterm exam. A practice exam will also be distributed on the Saturday before the common final exam.
     materials_allowed: |
       **Midterm exams:** You may prepare one standard 8.5 × 11-inch reference sheet using one side only.
 
@@ -148,7 +150,7 @@ schedule:
     - "Sept. 28 & 30"               # week 6
     - "Oct. 5 & 7"                  # week 7
     - "Oct. 12 & 14"                # week 8
-    - "Oct. 19 & 21"                # week 9
+    - "Oct. 19 (virtual) & 21"      # week 9
     - "Oct. 26 & 28"                # week 10
     - "Nov. 2 & 4"                  # week 11
     - "Nov. 9 & 11 (no class)"      # week 12
@@ -172,7 +174,7 @@ schedule:
     - ""   # week 6
     - ""   # week 7
     - ""   # week 8
-    - ""   # week 9
+    - "Oct. 19 — virtual class"   # week 9
     - ""   # week 10
     - ""   # week 11
     - "Veterans Day — no class Wednesday, Nov. 11"   # week 12
