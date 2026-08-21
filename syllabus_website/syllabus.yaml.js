@@ -1,6 +1,6 @@
 window.SYLLABUS_YAML = String.raw`
 # =====================================================================
-#  STAT/DATA 1810 — SYLLABUS FORM  (fill me in!)
+#  STAT/DATA 1810 - SYLLABUS FORM  (fill me in!)
 #  ---------------------------------------------------------------------
 #  Everything between the first line and the last line is plain YAML.
 #  • Fill in the "" values. Anything left empty shows on the page as a
@@ -8,9 +8,9 @@ window.SYLLABUS_YAML = String.raw`
 #  • For paragraphs use the  |  block style (see examples). Blank lines
 #    make new paragraphs; lines starting with "- " make bullet lists;
 #    **bold** and code-in-backticks work inside text. Lines that start with "#"
-#    inside a paragraph are hints — they are ignored on the page, so you
+#    inside a paragraph are hints - they are ignored on the page, so you
 #    can leave them or delete them.
-#  • Save the file and refresh the browser — no build step.
+#  • Save the file and refresh the browser - no build step.
 #  • Do NOT type a lone backtick character anywhere (only matched pairs
 #    around inline code), and never write a dollar sign followed by {.
 # =====================================================================
@@ -24,7 +24,7 @@ course:
   meeting_days: "Monday & Wednesday"
   meeting_time: "7:30-8:50 AM, 9:00-10:20 AM, 10:30-11:50 AM"          # e.g., 2:10–4:00 PM
   location: "38-122 (Math & Science 38)"              # building – room
-  final_exam: "Common Final — Saturday, December 12, 2026; time TBD"  # day, date & time of the final
+  final_exam: "Common Final - Saturday, December 12, 2026; time TBD"  # day, date & time of the final
   final_exam_location: "TBD"
   prerequisites: "One of the following: DATA/STAT 1000, STAT 130, STAT 217, STAT 218, STAT 252, STAT 301, STAT 312, STAT 1110, STAT 1220, STAT 1510, or STAT 3210.
 "         # exactly as in the catalog, or "None"
@@ -39,31 +39,31 @@ instructor:
   office: "25-113"                # building – room
   office_hours: "MW 2:00 - 3:15 pm"          # days & times
   office_hours_mode: "in person"     # in person / Zoom link
-  preferred_contact: "Canvas Inbox"     # e.g., Email; expect a reply within 24 hours on weekdays
+  preferred_contact: "Microsoft Outlook email only"     # e.g., Email; expect a reply within 24 hours on weekdays
   communication_expectations: |
-    Send all course-related messages through the **Canvas Inbox** using the Cal Poly email address associated with your Canvas account. **Do not use a personal email account, including Gmail or Yahoo.** Introduce yourself and include your course/section, then use a clear subject line such as **“DATA 1810 – Assignment 3 Question.”** Canvas messages are best for brief questions or administrative matters; use **office hours** for detailed explanations, code help, or longer discussions. Please include enough context in your message so I can respond efficiently.
+    **Do not contact me through Canvas. Email me only through Microsoft Outlook, and send the message from your Cal Poly email address. Do not use any personal or non-Cal Poly email account.** Introduce yourself and include your course/section, then use a clear subject line such as **“DATA 1810: Assignment 3 Question.”** Use **office hours** for detailed explanations, code help, or longer discussions. Please include enough context in your message so I can respond efficiently.
 
 
 purpose:
   catalog_description: |
-   STAT/DATA 1810 is where you stop being a spectator of data and become someone who does something with it. From the first weeks you will write real R code in a real workflow — pulling in messy datasets, wrestling them into shape, and turning them into visualizations that actually answer a question. Every class in the heart of the course runs one complete Extract → Transform → Visualize cycle on real data — Kobe's game logs, county populations scraped from the web, live weather from an API, coffee sales, the NBA's greatest — so you learn by finishing something, every single day. Then you level up: you will write loops and functions that let you do in seconds what once took an afternoon, and you will finish the term running your own statistical investigations — forming a question, testing it, and defending the answer. 
+   STAT/DATA 1810 is where you stop being a spectator of data and become someone who does something with it. From the first weeks you will write real R code in a real workflow - pulling in messy datasets, wrestling them into shape, and turning them into visualizations that actually answer a question. Every class in the heart of the course runs one complete Extract → Transform → Visualize cycle on real data - Kobe's game logs, county populations scraped from the web, live weather from an API, coffee sales, the NBA's greatest - so you learn by finishing something, every single day. Then you level up: you will write loops and functions that let you do in seconds what once took an afternoon, and you will finish the term running your own statistical investigations - forming a question, testing it, and defending the answer.
    
-   Along the way you will build the habits that separate people who use data from people who are used by it: reading documentation on your own, asking who is missing from a dataset and who might be harmed by a conclusion, and reproducing your work so others can trust it. This course is demanding on purpose. It asks you to practice a little every day, to keep old skills sharp while you add new ones, and to show your work under time pressure — because that is what competence feels like. Come ready to be stretched. Leave able to take any table of numbers and make it speak.
+   Along the way you will build the habits that separate people who use data from people who are used by it: reading documentation on your own, asking who is missing from a dataset and who might be harmed by a conclusion, and reproducing your work so others can trust it. This course is demanding on purpose. It asks you to practice a little every day, to keep old skills sharp while you add new ones, and to show your work under time pressure - because that is what competence feels like. Come ready to be stretched. Leave able to take any table of numbers and make it speak.
   program_role: |
     This course provides students from a wide range of majors with a practical foundation in data science using R. For students pursuing the Data Science minor, it introduces the computational and data-management skills needed for later coursework. More broadly, it serves as an early course in the sequence, connecting introductory statistical ideas with reproducible workflows for importing, transforming, visualizing, and analyzing real data.
 
 materials:
   textbook: |
-    - [R is Your Friend](https://r-is-your-friend.github.io/course-pack/) — setup, R basics, control flow, functions, tidyverse, visualization, data wrangling, projects, and file paths.
-    - [R for Data Science, 2nd edition (R4DS)](https://r4ds.hadley.nz/) by Hadley Wickham, Mine Çetinkaya-Rundel, and Garrett Grolemund — data import, transformation, visualization, tidying, joins, strings, factors, dates, spreadsheets, and Quarto.
-    - [Introduction to Modern Statistics (OpenIntro)](https://openintrostat.github.io/ims/) — specifically the linear-regression material in §7.1.1–7.1.3.
+    - [R is Your Friend](https://r-is-your-friend.github.io/course-pack/) - setup, R basics, control flow, functions, tidyverse, visualization, data wrangling, projects, and file paths.
+    - [R for Data Science, 2nd edition (R4DS)](https://r4ds.hadley.nz/) by Hadley Wickham, Mine Çetinkaya-Rundel, and Garrett Grolemund - data import, transformation, visualization, tidying, joins, strings, factors, dates, spreadsheets, and Quarto.
+    - [Introduction to Modern Statistics (OpenIntro)](https://openintrostat.github.io/ims/) - specifically the linear-regression material in §7.1.1–7.1.3.
   install_instructions: |
     1. **Install R.** Open the [R download page](https://cloud.r-project.org/), choose your operating system, and install the latest version.
     2. **Install Positron.** Download and install [Positron](https://posit.co/download/positron/), the program we will use to write and run R code.
     3. **Check your setup.** Open Positron, start an R console, type **1 + 1**, and press Enter. If the console returns **2**, you are ready.
     4. **Bring your laptop to class.** If installation does not work, bring your laptop and charger to the first class so we can help you finish the setup.
   laptop_policy: "**You should bring a laptop to every class**"         # e.g., "Bring a laptop to every class"
-  drill_app_access: ""      # URL / how to log in
+  drill_app_access: "The drill app is still in progress. Access information will be updated by Sunday night."      # URL / how to log in
   other_supplies: "None"        # anything else, or "None"
 
 grading:
@@ -76,7 +76,7 @@ grading:
     labs: 100
     drills: 75
     total: 1000
-  # Letter-grade cutoffs — add or remove rows as needed
+  # Letter-grade cutoffs - add or remove rows as needed
   grade_scale:
     - { letter: "A+", range: "97–100" }
     - { letter: "A",  range: "93–96.9" }
@@ -100,12 +100,12 @@ grading:
   #   - { letter: "C−", range: "70–72.9" }
   #   - { letter: "D",  range: "60–69.9" }
   #   - { letter: "F",  range: "below 60" }
-  rounding_policy: "TBD — the rounding and curving policy will be determined during final exam week."
+  rounding_policy: "TBD - the rounding and curving policy will be determined during final exam week."
 
 assignments:
   exams:
     description: |
-      Each exam combines Canvas questions with paper-and-pencil questions. Approximately 10%–25% of the questions will be completed through Canvas, and the remaining 75%–90% will be completed using paper and pencil. You are responsible for bringing any required materials and arriving prepared to complete both portions.
+      Each midterm has **15 to 20 questions** and combines Canvas questions with paper-and-pencil questions. Approximately 10%–25% of the questions will be completed through Canvas, and the remaining 75%–90% will be completed using paper and pencil. You are responsible for bringing any required materials and arriving prepared to complete both portions.
     practice_exams: |
       A practice exam will be distributed on the Saturday before each Wednesday midterm exam. A practice exam will also be distributed on the Saturday before the common final exam.
     materials_allowed: |
@@ -119,17 +119,17 @@ assignments:
 
       If a known academic, religious, athletic, professional, or personal obligation will prevent you from taking an exam as scheduled, notify the instructor at least two weeks in advance.
 
-      For an unexpected illness or emergency, contact the instructor as soon as possible—preferably the day before the exam, but no later than the day of the exam—and briefly explain the situation. Missed exams caused by documented illnesses or emergencies will be handled individually under course and university policies. Notification does not automatically guarantee an alternative exam arrangement.
+      For an unexpected illness or emergency, contact the instructor as soon as possible - preferably the day before the exam, but no later than the day of the exam - and briefly explain the situation. Missed exams caused by documented illnesses or emergencies will be handled individually under course and university policies. Notification does not automatically guarantee an alternative exam arrangement.
   checkins:
     description: |
       Check-ins are completed during class and may occur at any point during a class meeting. You must be present and participating when the check-in is administered to receive credit.
 
       **Self check-ins** are completed independently and assess your understanding of the course material. **Collaborative check-ins** are completed with assigned classmates and assess communication, problem-solving, and collaboration.
     submission: "Completed during class; you must be present and participating when the check-in is administered."
-    missed: "Four scores are dropped automatically: two self check-ins and two collaborative check-ins. These drops account for occasional absences, illnesses, emergencies, or missed classes. Because four scores are already dropped, additional make-ups or extensions generally will not be provided."
+    missed: "**Exactly four check-in scores are dropped automatically: TWO self check-ins and TWO collaborative check-ins. The two drop allowances are separate and cannot be transferred or combined. A third missed self check-in is not covered by an unused collaborative drop, and a third missed collaborative check-in is not covered by an unused self drop.** These drops account for occasional absences, illnesses, emergencies, or missed classes. Because these four scores are already dropped, additional make-ups or extensions generally will not be provided."
   labs:
     description: |
-      Labs give you opportunities to practice and apply skills introduced in class. Complete the required work in your own Quarto (.qmd) file and retain that file as a record of your work.
+      Labs give you opportunities to practice and apply skills introduced in class. Some labs will introduce ways to use AI in this course to understand course information and enhance the production of code for course material. You remain responsible for understanding, reviewing, and explaining any work produced with AI support. Complete the required work in your own Quarto (.qmd) file and retain that file as a record of your work.
     due: "Assigned each Wednesday and due the following Wednesday at 11:59 PM (one week later)."
     submission: "Submit the answers used for grading through Canvas by the stated deadline. A completed Quarto (.qmd) file does not replace the required Canvas submission. You are responsible for confirming that Canvas received your answers successfully."
     late_policy: "Late submissions and extensions ordinarily will not be accepted. An extension may be considered only under extreme circumstances. To request consideration, email the instructor at least one full day before the deadline. Sending a request does not guarantee approval."
@@ -137,10 +137,10 @@ assignments:
     description: |
       Each drill requires a good-faith attempt at all 40 assigned questions before the stated deadline. Begin early and distribute your practice throughout the week. Drill extensions will not be granted.
     deadline: "Every Sunday at 11:59 PM."
-    grading: "Credit is based on completion, participation, and time spent practicing—not solely on correctness. A question counts as completed when a reasonable attempt has been submitted. If question completion and practice time fall into different engagement levels, the lower level determines the credit awarded."
+    grading: "Credit is based on completion, participation, and time spent practicing - not solely on correctness. A question counts as completed when a reasonable attempt has been submitted. If question completion and practice time fall into different engagement levels, the lower level determines the credit awarded."
 
 schedule:
-  # One entry per week (15) — e.g., "Sep 22 & 24"
+  # One entry per week (15) - e.g., "Sep 22 & 24"
   week_dates:
     - "Aug. 24 & 26"                # week 1
     - "Aug. 31 & Sept. 2"           # week 2
@@ -160,24 +160,31 @@ schedule:
   midterm1_date: "September 23, 2026"  # Wednesday of week 5
   midterm2_date: "October 21, 2026"    # Wednesday of week 9
   midterm3_date: "November 18, 2026"   # moved to Wednesday of week 13; Nov. 11 is Veterans Day
-  final_date: "Saturday, December 12, 2026 — time TBD"
+  final_date: "Saturday, December 12, 2026 - time TBD"
   lab_due: "Assigned Wednesday; due the following Wednesday at 11:59 PM"
   drill_deadline: "Every Sunday at 11:59 PM"
-  other_deadlines: "Labor Day: Sept. 7 (no class) · Veterans Day: Nov. 11 (no class) · Fall Break: Nov. 23–29 · Last day of classes: Dec. 11 · Common Final: Dec. 12 (time TBD)"
+  other_deadlines: |
+    - **Add/drop deadline:** See the Cal Poly academic calendar
+    - **Withdrawal deadline:** See the Cal Poly academic calendar
+    - **Labor Day:** Sept. 7 (no class)
+    - **Veterans Day:** Nov. 11 (no class)
+    - **Fall Break:** Nov. 23–29
+    - **Last day of classes:** Dec. 11
+    - **Common Final:** Dec. 12 (time TBD)
   # Optional: put per-week notes here (holiday, no class, guest speaker). Same order as week_dates.
   week_notes:
     - ""   # week 1
     - ""   # week 2
-    - "Labor Day — no class Monday, Sept. 7"   # week 3
+    - "Labor Day - no class Monday, Sept. 7"   # week 3
     - ""   # week 4
     - ""   # week 5
     - ""   # week 6
     - ""   # week 7
     - ""   # week 8
-    - "Oct. 19 — virtual class"   # week 9
+    - "Oct. 19: virtual class; watch the assigned videos to complete the class material; free self check-in"   # week 9
     - ""   # week 10
     - ""   # week 11
-    - "Veterans Day — no class Wednesday, Nov. 11"   # week 12
+    - "Veterans Day - no class Wednesday, Nov. 11"   # week 12
     - "Midterm 3 on Wednesday, Nov. 18"   # week 13
     - "Fall Break was Nov. 23–29"   # week 14
     - ""   # week 15
@@ -186,7 +193,7 @@ policies:
   attendance: |
     Attendance is required because each class meeting includes important instruction, practice, and in-class assessment activities. Check-ins may occur at any point during class and must be completed in class. There are two types: self check-ins and collaborative check-ins.
 
-    The four lowest check-in scores will be dropped—two self check-ins and two collaborative check-ins. These drops account for occasional absences, illnesses, emergencies, or other unavoidable conflicts. You may miss up to four check-ins without a direct effect on your check-in grade, provided the missed check-ins remain within the two-drop limit for each type. Missing additional check-ins may lower your grade. Check-ins generally cannot be completed outside class or made up.
+    **Exactly four check-in scores are dropped: TWO self check-ins and TWO collaborative check-ins. These are separate limits. Drops cannot be transferred between types, traded, pooled, or used as four drops of one type.** A third missed check-in of either type may lower your grade even if you have an unused drop of the other type. These drops account for occasional absences, illnesses, emergencies, or other unavoidable conflicts. Check-ins generally cannot be completed outside class or made up.
   late_work: |
     Labs must be submitted through Canvas by the stated deadlines. Complete your work in an individual Quarto (.qmd) file, but submit the answers used for grading through Canvas. Maintaining a completed .qmd file does not replace the required Canvas submission.
 
@@ -194,8 +201,8 @@ policies:
   missed_exams: |
     Exam dates are firm. If a known event, obligation, or conflict will prevent you from taking an exam as scheduled, notify the instructor at least two weeks in advance.
 
-    If you become sick or experience an unexpected emergency, contact the instructor as soon as possible—preferably the day before the exam, but no later than the day of the exam. Missed exams will be addressed individually according to the circumstances and applicable university policies. Notification does not automatically guarantee an alternative exam arrangement.
-  ai_labs: "AI tools may be used to support learning and problem-solving. You remain responsible for understanding, reviewing, and being able to explain everything you submit."
+    If you become sick or experience an unexpected emergency, contact the instructor as soon as possible - preferably the day before the exam, but no later than the day of the exam. Missed exams will be addressed individually according to the circumstances and applicable university policies. Notification does not automatically guarantee an alternative exam arrangement.
+  ai_labs: "Some labs will introduce how to use AI to understand course information and enhance code production for course material. AI tools may be used to support learning and problem-solving when a lab permits them. You remain responsible for understanding, reviewing, and being able to explain everything you submit."
   ai_checkins: "AI tools are not permitted."
   ai_drills: "AI tools are not permitted."
   ai_exams: "AI tools are not permitted."
@@ -218,8 +225,6 @@ policies:
     visual: |
       **Visual Opportunity.** There is a picture in the picture frame. During learning hours, I will randomly display the picture frame two days each week. If you see it, take a picture and complete the survey. I will award the extra-credit points at the end of the quarter. The number of points will be determined at the end of the quarter.
     visual_survey_url: "https://forms.gle/q3qj1nvDTBWgdK6B8"
-  trips_events: "None Planned"          # course-related trips / special events, or "None planned"
-  incentives: "None"            # stickers or other course incentives, or "None"
   drc: |
     Students who need disability-related accommodations should contact Cal Poly’s Disability Resource Center (DRC) and provide the appropriate accommodation information to the instructor as early as possible. I will work with the student and the DRC to implement approved accommodations while maintaining the course’s learning objectives. Students are encouraged to communicate early so accommodations can be arranged before an assignment, check-in, or exam.
 

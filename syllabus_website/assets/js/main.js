@@ -1,5 +1,5 @@
 /* =====================================================================
-   STAT/DATA 1810 — Syllabus behavior
+   STAT/DATA 1810 - Syllabus behavior
    1. Reads syllabus.yaml.js (window.SYLLABUS_YAML) and fills every
       element that has data-field="path.to.value".
         - empty value  -> RED BOLD BOX naming the field
@@ -26,7 +26,7 @@
       var banner = document.getElementById("yamlError");
       if (banner) {
         banner.hidden = false;
-        banner.textContent = "Could not read syllabus.yaml.js — " + (e.message || e) +
+        banner.textContent = "Could not read syllabus.yaml.js - " + (e.message || e) +
           " (fix the YAML and refresh; until then every field shows as missing).";
       }
     }
@@ -57,7 +57,7 @@
     h = h.replace(/`([^`]+)`/g, "<code>$1</code>");
     h = h.replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>");
     h = h.replace(/\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>');
-    h = h.replace(/(^|[\s(])((?:https?:\/\/)[^\s)<]+)/g, '$1<a href="$2">$2</a>');
+    h = h.replace(/(^|[\s(])((?:https?:\/\/)[^\s)<]+)/g, '$1<a href="$2" target="_blank" rel="noopener noreferrer">$2</a>');
     return h;
   }
   /* rich text: blank-line paragraphs, bullet lists, and numbered lists */
@@ -93,7 +93,7 @@
       if (fmt === "rich") el.innerHTML = rich(val);
       else if (fmt === "link") {
         var url = clean(get(el.getAttribute("data-href-field") || ""));
-        el.innerHTML = url ? '<a href="' + esc(url) + '">' + inline(val) + "</a>" : inline(val);
+        el.innerHTML = url ? '<a href="' + esc(url) + '" target="_blank" rel="noopener noreferrer">' + inline(val) + "</a>" : inline(val);
       } else el.innerHTML = inline(val);
     });
     /* link fields where the URL is the missing piece */
@@ -102,7 +102,7 @@
       var url = clean(get(path));
       var label = clean(get(el.getAttribute("data-label-field") || "")) || el.getAttribute("data-label") || url;
       if (!url) { el.innerHTML = todo(el, path); return; }
-      el.innerHTML = '<a href="' + esc(url) + '">' + esc(label) + "</a>";
+      el.innerHTML = '<a href="' + esc(url) + '" target="_blank" rel="noopener noreferrer">' + esc(label) + "</a>";
     });
     renderGradeScale();
     renderTodoCount();
@@ -113,7 +113,7 @@
     var rows = get("grading.grade_scale");
     if (!Array.isArray(rows) || !rows.length) {
       host.innerHTML = '<div class="todo-note"><b>Grade scale:</b> ' +
-        '<span class="todo">LETTER-GRADE CUTOFFS <small>[grading.grade_scale]</small></span> — add rows to <code>grading.grade_scale</code> in syllabus.yaml.js.</div>';
+        '<span class="todo">LETTER-GRADE CUTOFFS <small>[grading.grade_scale]</small></span> - add rows to <code>grading.grade_scale</code> in syllabus.yaml.js.</div>';
       return;
     }
     var html = '<div class="tbl-scroll"><table><thead><tr><th>Letter grade</th><th>Percentage</th></tr></thead><tbody>';

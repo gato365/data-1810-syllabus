@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>STAT/DATA 1810 — Course Syllabus</title>
+<title>STAT/DATA 1810 - Course Syllabus</title>
 <meta name="description" content="Course syllabus for STAT/DATA 1810 at Cal Poly, San Luis Obispo.">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="assets/css/style.css">
@@ -27,22 +27,22 @@
   <aside class="sidenav" aria-label="Syllabus sections">
     <div class="menu-head">Sections <small>click to open</small></div>
     <ul class="menu-list">
-      <li><button class="menu-item c1" type="button" data-target="s1"><span class="n">1</span><span class="t">Instructor Contact Information</span><span class="todo-count" hidden></span><span class="state"></span></button></li>
-      <li><button class="menu-item c2" type="button" data-target="s2"><span class="n">2</span><span class="t">General Course Information</span><span class="todo-count" hidden></span><span class="state"></span></button></li>
-      <li><button class="menu-item c3" type="button" data-target="s3"><span class="n">3</span><span class="t">Purpose of the Course</span><span class="todo-count" hidden></span><span class="state"></span></button></li>
-      <li><button class="menu-item c4" type="button" data-target="s4"><span class="n">4</span><span class="t">Course Learning Outcomes</span><span class="todo-count" hidden></span><span class="state"></span></button></li>
-      <li><button class="menu-item c5" type="button" data-target="s5"><span class="n">5</span><span class="t">Course Materials</span><span class="todo-count" hidden></span><span class="state"></span></button></li>
-      <li><button class="menu-item c6" type="button" data-target="s6"><span class="n">6</span><span class="t">Assignment &amp; Grade Breakdown</span><span class="todo-count" hidden></span><span class="state"></span></button></li>
-      <li><button class="menu-item c7" type="button" data-target="s7"><span class="n">7</span><span class="t">Assignment Descriptions &amp; Expectations</span><span class="todo-count" hidden></span><span class="state"></span></button></li>
-      <li><button class="menu-item c8" type="button" data-target="s8"><span class="n">8</span><span class="t">Course Timeline &amp; Schedule</span><span class="todo-count" hidden></span><span class="state"></span></button></li>
-      <li><button class="menu-item c9" type="button" data-target="s9"><span class="n">9</span><span class="t">Course Policies</span><span class="todo-count" hidden></span><span class="state"></span></button></li>
+      <li><button class="menu-item c1" type="button" data-target="s1"><span class="t">Instructor Contact Information</span><span class="state"></span></button></li>
+      <li><button class="menu-item c2" type="button" data-target="s2"><span class="t">General Course Information</span><span class="state"></span></button></li>
+      <li><button class="menu-item c3" type="button" data-target="s3"><span class="t">Purpose of the Course</span><span class="state"></span></button></li>
+      <li><button class="menu-item c4" type="button" data-target="s4"><span class="t">Course Learning Outcomes</span><span class="state"></span></button></li>
+      <li><button class="menu-item c5" type="button" data-target="s5"><span class="t">Course Materials</span><span class="state"></span></button></li>
+      <li><button class="menu-item c6" type="button" data-target="s6"><span class="t">Assignment &amp; Grade Breakdown</span><span class="state"></span></button></li>
+      <li><button class="menu-item c7" type="button" data-target="s7"><span class="t">Assignment Descriptions &amp; Expectations</span><span class="state"></span></button></li>
+      <li><button class="menu-item c8" type="button" data-target="s8"><span class="t">Course Timeline &amp; Schedule</span><span class="state"></span></button></li>
+      <li><button class="menu-item c9" type="button" data-target="s9"><span class="t">Course Policies</span><span class="state"></span></button></li>
     </ul>
     <div class="menu-tools">
       <button class="btn" type="button" onclick="document.getElementById('expandAll').click()">Expand all</button>
       <button class="btn" type="button" onclick="document.getElementById('collapseAll').click()">Collapse all</button>
       <button class="btn primary wide" type="button" data-print>🖨 Print / Export to PDF</button>
     </div>
-    <div class="menu-hint">Click a section to open it; several can stay open together. Printing expands everything automatically. Red numbers = fields still to fill in <code>syllabus.yaml.js</code>.</div>
+    <div class="menu-hint">Click a section to open it; several can stay open together. Printing expands everything automatically.</div>
   </aside>
 
   <!-- ===================================================== main content -->
@@ -51,7 +51,7 @@
 
     <div class="masthead">
       <div class="eyebrow">California Polytechnic State University, San Luis Obispo · Statistics Department</div>
-      <h1><span data-field="course.code" data-label="COURSE CODE"></span> — Course Syllabus</h1>
+      <h1><span data-field="course.code" data-label="COURSE CODE"></span> - Course Syllabus</h1>
       <div class="sub">
         <span data-field="course.title" data-label="OFFICIAL CATALOG COURSE TITLE"></span> ·
         <span data-field="course.term" data-label="TERM &amp; YEAR"></span> ·
@@ -63,7 +63,6 @@
         <div><b>Office hours</b> <span data-field="instructor.office_hours" data-label="DAYS / TIMES"></span></div>
         <div><b>Email</b> <span data-field="instructor.email" data-label="EMAIL"></span></div>
       </div>
-      <div class="todo-note no-print" id="todoNote"><b>Note to instructor:</b> <span class="todo-count" data-render="todo-count"></span> items shown as <span class="todo">RED BOLD BOXES</span> are not filled in yet. Each box names its field — open <code>syllabus.yaml.js</code>, fill in that key, save, and refresh. This note disappears when nothing is missing and never prints.</div>
     </div>
 
     <!-- ================================================================ 1 -->
@@ -74,7 +73,7 @@
           <dt>Instructor</dt><dd><span data-field="instructor.name" data-label="INSTRUCTOR NAME"></span>, <span data-field="instructor.title" data-label="TITLE / DEPARTMENT"></span></dd>
           <dt>Email</dt><dd><span data-field="instructor.email" data-label="EMAIL ADDRESS"></span></dd>
           <dt>Office location</dt><dd><span data-field="instructor.office" data-label="BUILDING – ROOM"></span></dd>
-          <dt>Office / learning hours</dt><dd><span data-field="instructor.office_hours" data-label="DAYS &amp; TIMES"></span> — <span data-field="instructor.office_hours_mode" data-label="IN PERSON / VIRTUAL LINK"></span></dd>
+          <dt>Office / learning hours</dt><dd><span data-field="instructor.office_hours" data-label="DAYS &amp; TIMES"></span> - <span data-field="instructor.office_hours_mode" data-label="IN PERSON / VIRTUAL LINK"></span></dd>
           <dt>Preferred contact</dt><dd><span data-field="instructor.preferred_contact" data-label="PREFERRED METHOD &amp; RESPONSE TIME"></span></dd>
         </dl>
         <div class="box green"><b>How to reach me</b>
@@ -88,7 +87,7 @@
       <h2><button class="acc-btn" type="button" aria-expanded="false" aria-controls="p2"><span class="acc-num">2</span><span class="acc-title">General Course Information</span><svg class="acc-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></h2>
       <div class="acc-panel" id="p2" hidden>
         <dl class="kv">
-          <dt>Course</dt><dd><span data-field="course.code" data-label="COURSE CODE"></span> — <span data-field="course.title" data-label="OFFICIAL CATALOG TITLE"></span></dd>
+          <dt>Course</dt><dd><span data-field="course.code" data-label="COURSE CODE"></span> - <span data-field="course.title" data-label="OFFICIAL CATALOG TITLE"></span></dd>
           <dt>Section</dt><dd><span data-field="course.section" data-label="SECTION NUMBER(S)"></span></dd>
           <dt>Term</dt><dd><span data-field="course.term" data-label="TERM &amp; YEAR"></span></dd>
           <dt>Units</dt><dd><span data-field="course.units" data-label="UNITS"></span></dd>
@@ -117,22 +116,22 @@
           <div class="box found"><b>Foundations · weeks 1–2</b><p>Course systems, the R environment (Positron), project-based file management, storage magnitudes, variable assignment, data and container types, and the pipe. Rhythm: <em>See it → Define it → Apply it</em>.</p></div>
           <div class="box data"><b>Data (ETV) · weeks 3–9</b><p>Fourteen class meetings = fourteen complete <strong>Extract → Transform → Visualize</strong> cycles on real datasets. Import/export, cleaning, and visualization are learned inside the cycles; ethics is infused throughout. Rhythm: <em>context &amp; ethics → question → E → T → V → answer</em>.</p></div>
           <div class="box cs"><b>CS · weeks 10–12</b><p>Programming constructs motivated by the data work: control flow, loops and accumulators, purrr <code>map()</code>, and writing and debugging functions (packaging an ETV workflow into a function). Rhythm: <em>Motivation → Definition → Practice</em>.</p></div>
-          <div class="box stat"><b>STAT · weeks 13–15</b><p>Statistical questions and hypothesis testing on datasets the class already knows: one-way ANOVA, chi-square, and simple linear regression — one reproducible <code>.qmd</code> report built from scratch each week. Rhythm: <em>the seven-step statistical investigation workflow</em>.</p></div>
+          <div class="box stat"><b>STAT · weeks 13–15</b><p>Statistical questions and hypothesis testing on datasets the class already knows: one-way ANOVA, chi-square, and simple linear regression - one reproducible <code>.qmd</code> report built from scratch each week. Rhythm: <em>the seven-step statistical investigation workflow</em>.</p></div>
         </div>
 
         <h3>Role of the course within the program</h3>
-        <p>The course serves the Statistics B.S. Program Learning Objectives (PLOs) below — mainly <span class="pill p-plo">PLO-5</span> software mastery and data management, with contributions to <span class="pill p-plo">PLO-1</span>, <span class="pill p-plo">PLO-3</span>, and <span class="pill p-plo">PLO-4</span>.</p>
+        <p>The course serves the Statistics B.S. Program Learning Objectives (PLOs) below - mainly <span class="pill p-plo">PLO-5</span> software mastery and data management, with contributions to <span class="pill p-plo">PLO-1</span>, <span class="pill p-plo">PLO-3</span>, and <span class="pill p-plo">PLO-4</span>.</p>
         <div data-field="purpose.program_role" data-fmt="rich" data-label="ROLE FOR NON-STAT MAJORS / DATA MINOR / PLACE IN SEQUENCE"></div>
         <div class="tbl-scroll">
           <table>
             <thead><tr><th>PLO</th><th>Name</th><th>Description</th><th>Served here?</th></tr></thead>
             <tbody>
               <tr><td><span class="pill p-plo">PLO-1</span></td><td>Statistical methods</td><td>Good working knowledge of the most commonly used statistical methods, including statistical modeling and the omnipresent role of variability, efficient design of studies and construction of effective sampling plans, exploratory data analysis, and the formal inference process.</td><td>Yes (CLO 4, 10)</td></tr>
-              <tr><td><span class="pill p-plo">PLO-2</span></td><td>Mathematical background</td><td>Background in probability, statistical theory, and mathematics, including especially calculus, linear algebra, and symbolic/abstract thinking.</td><td>—</td></tr>
+              <tr><td><span class="pill p-plo">PLO-2</span></td><td>Mathematical background</td><td>Background in probability, statistical theory, and mathematics, including especially calculus, linear algebra, and symbolic/abstract thinking.</td><td> - </td></tr>
               <tr><td><span class="pill p-plo">PLO-3</span></td><td>Inferential synthesis</td><td>Ability to synthesize and apply knowledge of common inferential methods, understanding the limitations of procedures and appropriate conclusions.</td><td>Yes (CLO 10)</td></tr>
               <tr><td><span class="pill p-plo">PLO-4</span></td><td>Communication &amp; collaboration</td><td>Communicate effectively (written and oral) with skills in collaboration (within and between disciplines) and teamwork, and in organizing and managing projects.</td><td>Yes (CLO 9, 12)</td></tr>
               <tr><td><span class="pill p-plo">PLO-5</span></td><td>Software mastery</td><td>Good mastery of several standard statistical software packages and facility with data management strategies.</td><td><strong>Primary</strong> (CLO 1–9, 11)</td></tr>
-              <tr><td><span class="pill p-plo">PLO-6</span></td><td>Application concentration</td><td>Focused concentration in an area of application outside the discipline of statistics.</td><td>—</td></tr>
+              <tr><td><span class="pill p-plo">PLO-6</span></td><td>Application concentration</td><td>Focused concentration in an area of application outside the discipline of statistics.</td><td> - </td></tr>
             </tbody>
           </table>
         </div>
@@ -264,12 +263,12 @@
             <thead><tr><th>Category</th><th>Count</th><th># Questions</th><th class="num">Points</th><th class="num">% of grade</th><th>Share</th></tr></thead>
             <tbody>
               <tr><td><span class="pill p-exam">FE</span> Final Exam (cumulative)</td><td>1×</td><td>35</td><td class="num"><span data-field="grading.points.final" data-label="PTS"></span></td><td class="num">32.5%</td><td><div class="bar-track"><div class="bar-fill" style="width:100%;background:var(--exam)"></div></div></td></tr>
-              <tr><td><span class="pill p-exam">ME</span> Midterm Exams (ME1 6% · ME2 8% · ME3 11%)</td><td>3×</td><td>20 each</td><td class="num"><span data-field="grading.points.midterms" data-label="PTS"></span></td><td class="num">25%</td><td><div class="bar-track"><div class="bar-fill" style="width:77%;background:var(--exam)"></div></div></td></tr>
-              <tr><td><span class="pill p-ci">CI_s</span> Check-Ins — self</td><td>15×</td><td>4 each</td><td class="num"><span data-field="grading.points.checkins_self" data-label="PTS"></span></td><td class="num">15%</td><td><div class="bar-track"><div class="bar-fill" style="width:46%;background:var(--ci)"></div></div></td></tr>
-              <tr><td><span class="pill p-ci">CI_c</span> Check-Ins — collaborative</td><td>11×</td><td>3 each</td><td class="num"><span data-field="grading.points.checkins_collab" data-label="PTS"></span></td><td class="num">10%</td><td><div class="bar-track"><div class="bar-fill" style="width:31%;background:var(--ci)"></div></div></td></tr>
+              <tr><td><span class="pill p-exam">ME</span> Midterm Exams (ME1 6% · ME2 8% · ME3 11%)</td><td>3×</td><td>15 to 20 each</td><td class="num"><span data-field="grading.points.midterms" data-label="PTS"></span></td><td class="num">25%</td><td><div class="bar-track"><div class="bar-fill" style="width:77%;background:var(--exam)"></div></div></td></tr>
+              <tr><td><span class="pill p-ci">CI_s</span> Check-Ins, self<br><small>15 Mondays − Labor Day = 14; Oct. 19 virtual class is a free check-in</small></td><td>14×</td><td>4 each</td><td class="num"><span data-field="grading.points.checkins_self" data-label="PTS"></span></td><td class="num">15%</td><td><div class="bar-track"><div class="bar-fill" style="width:46%;background:var(--ci)"></div></div></td></tr>
+              <tr><td><span class="pill p-ci">CI_c</span> Check-Ins, collaborative<br><small>15 Wednesdays − Veterans Day − 3 midterms = 11</small></td><td>11×</td><td>3 each</td><td class="num"><span data-field="grading.points.checkins_collab" data-label="PTS"></span></td><td class="num">10%</td><td><div class="bar-track"><div class="bar-fill" style="width:31%;background:var(--ci)"></div></div></td></tr>
               <tr><td><span class="pill p-lab">L</span> Labs (take-home, AI-permitted)</td><td>15×</td><td>10 each</td><td class="num"><span data-field="grading.points.labs" data-label="PTS"></span></td><td class="num">10%</td><td><div class="bar-track"><div class="bar-fill" style="width:31%;background:var(--lab)"></div></div></td></tr>
               <tr><td><span class="pill p-drill">D</span> Drills (spaced review)</td><td>ongoing</td><td>~40/week (10 per drill)</td><td class="num"><span data-field="grading.points.drills" data-label="PTS"></span></td><td class="num">7.5%</td><td><div class="bar-track"><div class="bar-fill" style="width:23%;background:var(--drill)"></div></div></td></tr>
-              <tr><td><span class="pill p-gray">NA</span> Participation &amp; attendance</td><td>—</td><td>—</td><td class="num">0</td><td class="num">0%</td><td><div class="bar-track"></div></td></tr>
+              <tr><td><span class="pill p-gray">NA</span> Participation &amp; attendance</td><td> - </td><td> - </td><td class="num">0</td><td class="num">0%</td><td><div class="bar-track"></div></td></tr>
               <tr class="total"><td>Total</td><td></td><td></td><td class="num"><span data-field="grading.points.total" data-label="TOTAL PTS"></span></td><td class="num">100%</td><td></td></tr>
             </tbody>
               </table>
@@ -284,9 +283,9 @@
               <table>
             <thead><tr><th>Exam</th><th class="num">Weight</th><th>When</th><th>Emphasis weeks</th><th>Coverage (cumulative)</th></tr></thead>
             <tbody>
-              <tr><td><span class="pill p-exam">ME1</span> Midterm 1</td><td class="num">6%</td><td>Wed, week 5 — <span data-field="schedule.midterm1_date" data-label="DATE"></span></td><td>1–4</td><td>Weeks 1–4</td></tr>
-              <tr><td><span class="pill p-exam">ME2</span> Midterm 2</td><td class="num">8%</td><td>Wed, week 9 — <span data-field="schedule.midterm2_date" data-label="DATE"></span></td><td>5–8</td><td>Weeks 1–8</td></tr>
-              <tr><td><span class="pill p-exam">ME3</span> Midterm 3</td><td class="num">11%</td><td>Wed, week 13 — <span data-field="schedule.midterm3_date" data-label="DATE"></span></td><td>9–12</td><td>Weeks 1–12</td></tr>
+              <tr><td><span class="pill p-exam">ME1</span> Midterm 1</td><td class="num">6%</td><td>Wed, week 5 - <span data-field="schedule.midterm1_date" data-label="DATE"></span></td><td>1–4</td><td>Weeks 1–4</td></tr>
+              <tr><td><span class="pill p-exam">ME2</span> Midterm 2</td><td class="num">8%</td><td>Wed, week 9 - <span data-field="schedule.midterm2_date" data-label="DATE"></span></td><td>5–8</td><td>Weeks 1–8</td></tr>
+              <tr><td><span class="pill p-exam">ME3</span> Midterm 3</td><td class="num">11%</td><td>Wed, week 13 - <span data-field="schedule.midterm3_date" data-label="DATE"></span></td><td>9–12</td><td>Weeks 1–12</td></tr>
               <tr><td><span class="pill p-exam">FE</span> Common Final Exam</td><td class="num">32.5%</td><td><span data-field="schedule.final_date" data-label="DATE / TIME"></span></td><td>all</td><td>All course material</td></tr>
             </tbody>
               </table>
@@ -312,14 +311,14 @@
 
         <!-- Exams -->
         <div class="subacc exam">
-          <button class="sub-btn" type="button" aria-expanded="false" aria-controls="a-exams"><span class="pill p-exam">FE · ME</span> Exams — three midterms + a cumulative final<span class="sub-meta">57.5%</span><svg class="acc-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <button class="sub-btn" type="button" aria-expanded="false" aria-controls="a-exams"><span class="pill p-exam">FE · ME</span> Exams - three midterms + a cumulative final<span class="sub-meta">57.5%</span><svg class="acc-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <div class="sub-panel" id="a-exams" hidden>
             <div class="desc"><span class="desc-label">Description</span><div data-field="assignments.exams.description" data-fmt="rich" data-label="EXAMS DESCRIPTION PARAGRAPH"></div></div>
             <ul>
               <li><strong>Purpose:</strong> demonstrate, without outside help, the skills practiced in the notes, drills, and labs.</li>
               <li><strong>All exams are cumulative.</strong> Once an outcome first appears on a midterm it stays eligible on every exam after, including the final. Each exam emphasizes its most recent weeks (see Section 6).</li>
-              <li><strong>Format:</strong> midterms are 20 questions, given on <strong>Wednesday</strong> of weeks 5, 9, and 13, and take <strong>60 minutes</strong>; 10–15 minutes of that class period is still devoted to a Check-In. The common final is 35 questions on Saturday, December 12; the time is TBD.</li>
-              <li><strong>Question types:</strong> exam and check-in questions come in 14 consistent forms. Types 1–4 <em>read</em> supplied code and critique it; types 5–14 <em>produce</em> — write, complete, predict, calculate, interpret, or reflect.</li>
+              <li><strong>Format:</strong> midterms have <strong>15 to 20 questions</strong>, are given on <strong>Wednesday</strong> of weeks 5, 9, and 13, and take <strong>60 minutes</strong>. The common final is 35 questions on Saturday, December 12; the time is TBD.</li>
+              <li><strong>Question types:</strong> exam and check-in questions come in 14 consistent forms. Types 1–4 <em>read</em> supplied code and critique it; types 5–14 <em>produce</em> - write, complete, predict, calculate, interpret, or reflect.</li>
             </ul>
             <div class="policy-detail practice-exams">
               <h4>Practice exams</h4>
@@ -338,7 +337,7 @@
 
         <!-- Check-Ins -->
         <div class="subacc ci">
-          <button class="sub-btn" type="button" aria-expanded="false" aria-controls="a-ci"><span class="pill p-ci">CI_s · CI_c</span> Check-Ins — self (15×) and collaborative (11×)<span class="sub-meta">25%</span><svg class="acc-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <button class="sub-btn" type="button" aria-expanded="false" aria-controls="a-ci"><span class="pill p-ci">CI_s · CI_c</span> Check-Ins, self (14×) and collaborative (11×)<span class="sub-meta">25%</span><svg class="acc-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <div class="sub-panel" id="a-ci" hidden>
             <div class="desc"><span class="desc-label">Description</span><div data-field="assignments.checkins.description" data-fmt="rich" data-label="CHECK-INS DESCRIPTION PARAGRAPH"></div></div>
             <ul>
@@ -350,7 +349,7 @@
 
         <!-- Labs -->
         <div class="subacc lab">
-          <button class="sub-btn" type="button" aria-expanded="false" aria-controls="a-labs"><span class="pill p-lab">L</span> Labs — 15 take-home labs (AI-permitted)<span class="sub-meta">10%</span><svg class="acc-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <button class="sub-btn" type="button" aria-expanded="false" aria-controls="a-labs"><span class="pill p-lab">L</span> Labs - 15 take-home labs (AI-permitted)<span class="sub-meta">10%</span><svg class="acc-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <div class="sub-panel" id="a-labs" hidden>
             <div class="desc"><span class="desc-label">Description</span><div data-field="assignments.labs.description" data-fmt="rich" data-label="LABS DESCRIPTION PARAGRAPH"></div></div>
             <ul>
@@ -363,7 +362,7 @@
 
         <!-- Drills -->
         <div class="subacc drill">
-          <button class="sub-btn" type="button" aria-expanded="false" aria-controls="a-drills"><span class="pill p-drill">D</span> Drills — ongoing spaced review<span class="sub-meta">7.5%</span><svg class="acc-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <button class="sub-btn" type="button" aria-expanded="false" aria-controls="a-drills"><span class="pill p-drill">D</span> Drills - ongoing spaced review<span class="sub-meta">7.5%</span><svg class="acc-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <div class="sub-panel" id="a-drills" hidden>
             <div class="desc"><span class="desc-label">Description</span><div data-field="assignments.drills.description" data-fmt="rich" data-label="DRILLS DESCRIPTION PARAGRAPH"></div></div>
             <ul>
@@ -394,7 +393,7 @@
     <section class="acc c8" id="s8">
       <h2><button class="acc-btn" type="button" aria-expanded="false" aria-controls="p8"><span class="acc-num">8</span><span class="acc-title">Course Timeline and Assignment Schedule</span><svg class="acc-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></h2>
       <div class="acc-panel" id="p8" hidden>
-        <p style="margin-top:14px"><em>Tentative — the schedule may shift; changes will be announced in class and on the course site.</em> Weeks 3–9 center on complete Extract → Transform → Visualize cycles (C1–C12) plus two midterms; the Labor Day holiday is reflected below. Labs (weekly), drills (~4×/week), and check-ins (most class meetings) run throughout.</p>
+        <p style="margin-top:14px"><em>Tentative - the schedule may shift; changes will be announced in class and on the course site.</em> Weeks 3–9 center on complete Extract → Transform → Visualize cycles (C1–C12) plus two midterms; the Labor Day holiday is reflected below. Labs (weekly), drills (~4×/week), and check-ins (most class meetings) run throughout.</p>
         <p class="calendar-source"><strong>Fall 2026 dates:</strong> verified against the <a href="https://registrar.calpoly.edu/academic-calendar-2026-2027" target="_blank" rel="noopener noreferrer">Cal Poly Office of the Registrar academic calendar</a>.</p>
 
         <div class="subacc etv-cycle">
@@ -416,23 +415,23 @@
               <table class="allow-break">
             <thead><tr><th>Wk</th><th>Dates</th><th>Block</th><th>Monday</th><th>Wednesday</th><th>Dataset · guiding question</th><th>Assessments / notes</th></tr></thead>
             <tbody>
-              <tr class="row-found"><td class="ctr"><strong>1</strong></td><td><span data-field="schedule.week_dates.0" data-label="DATES"></span></td><td><span class="pill p-found">Found.</span></td><td><strong>Syllabus + drill app</strong>: token, rules, first warm-ups</td><td>Positron, projects, directories, storage magnitudes</td><td>— (tiny demo objects)</td><td>Drills open <span data-field="schedule.week_notes.0" data-optional></span></td></tr>
+              <tr class="row-found"><td class="ctr"><strong>1</strong></td><td><span data-field="schedule.week_dates.0" data-label="DATES"></span></td><td><span class="pill p-found">Found.</span></td><td><strong>Syllabus + drill app</strong>: token, rules, first warm-ups</td><td>Positron, projects, directories, storage magnitudes</td><td> -  (tiny demo objects)</td><td>Drills open <span data-field="schedule.week_notes.0" data-optional></span></td></tr>
               <tr class="row-found"><td class="ctr"><strong>2</strong></td><td><span data-field="schedule.week_dates.1" data-label="DATES"></span></td><td><span class="pill p-found">Found.</span></td><td>R objects, data structures, assignment, and selected operators</td><td>Project workflow and a preview of one complete ETV cycle</td><td>penguins snippets</td><td>Lab · CI · Drills <span data-field="schedule.week_notes.1" data-optional></span></td></tr>
-              <tr class="row-data holiday-row"><td class="ctr"><strong>3</strong></td><td><span data-field="schedule.week_dates.2" data-label="DATES"></span></td><td><span class="pill p-data">ETV</span></td><td><strong>Labor Day — no class</strong></td><td><strong>C1–C2</strong> Extract data from CSV and Excel files, inspect it, and create first visualizations</td><td>Coffee “What does spending look like?” · Kobe “Points, home vs away?”</td><td>Lab · CI · Drills <span data-field="schedule.week_notes.2" data-optional></span></td></tr>
+              <tr class="row-data holiday-row"><td class="ctr"><strong>3</strong></td><td><span data-field="schedule.week_dates.2" data-label="DATES"></span></td><td><span class="pill p-data">ETV</span></td><td><strong>Labor Day - no class</strong></td><td><strong>C1–C2</strong> Extract data from CSV and Excel files, inspect it, and create first visualizations</td><td>Coffee “What does spending look like?” · Kobe “Points, home vs away?”</td><td>Lab · CI · Drills <span data-field="schedule.week_notes.2" data-optional></span></td></tr>
               <tr class="row-data"><td class="ctr"><strong>4</strong></td><td><span data-field="schedule.week_dates.3" data-label="DATES"></span></td><td><span class="pill p-data">ETV</span></td><td><strong>C3</strong> Clean and recode text categories → flagged scatterplot</td><td><strong>C4</strong> Work with categories and timestamps → counts by hour and type</td><td>Fast-food “Which items are mislabeled?” · SLO crime “Where/when do incidents cluster?”</td><td>Lab · CI · Drills <span data-field="schedule.week_notes.3" data-optional></span></td></tr>
               <tr class="row-data"><td class="ctr"><strong>5</strong></td><td><span data-field="schedule.week_dates.4" data-label="DATES"></span></td><td><span class="pill p-data">ETV</span></td><td><strong>C5</strong> Reshape and join data → paired comparison</td><td class="exam-cell"><span class="pill p-exam">ME1</span> <strong>Midterm 1</strong> (weeks 1–4)</td><td>Kobe reuse “Home/away, properly shaped?”</td><td><span class="pill p-exam">ME1</span> · Lab · CI · Drills <span data-field="schedule.week_notes.4" data-optional></span></td></tr>
               <tr class="row-data"><td class="ctr"><strong>6</strong></td><td><span data-field="schedule.week_dates.5" data-label="DATES"></span></td><td><span class="pill p-data">ETV</span></td><td><strong>C6</strong> Summarize categories and proportions → bar and mosaic displays; <em>Ethics: representation / fairness</em></td><td><strong>C7</strong> Compare conditional proportions and refine the visual story</td><td>Coffee reuse “Origins × roasts?” · “Same table, better told?”</td><td>Lab · CI · Drills <span data-field="schedule.week_notes.5" data-optional></span></td></tr>
               <tr class="row-data"><td class="ctr"><strong>7</strong></td><td><span data-field="schedule.week_dates.6" data-label="DATES"></span></td><td><span class="pill p-data">ETV</span></td><td><strong>C8</strong> Extract web data and compare numerical summaries; <em>Ethics: measurement</em></td><td><strong>C9</strong> Cache extracted data and evaluate how exclusions change the story</td><td>Counties “Why mean ≫ median?” · “Does the story survive?”</td><td>Lab · CI · Drills <span data-field="schedule.week_notes.6" data-optional></span></td></tr>
               <tr class="row-data"><td class="ctr"><strong>8</strong></td><td><span data-field="schedule.week_dates.7" data-label="DATES"></span></td><td><span class="pill p-data">ETV</span></td><td><strong>C10</strong> Extract API data and examine a distribution</td><td><strong>C11</strong> Identify extreme patterns and compare groups over time</td><td>Weather “How windy was January?” · “Which days were extreme?”</td><td>Lab · CI · Drills <span data-field="schedule.week_notes.7" data-optional></span></td></tr>
-              <tr class="row-data"><td class="ctr"><strong>9</strong></td><td><span data-field="schedule.week_dates.8" data-label="DATES"></span></td><td><span class="pill p-data">ETV</span></td><td><strong>C12 Integrated capstone</strong>: derive useful measures, create two visualizations, and make one supported claim</td><td class="exam-cell"><span class="pill p-exam">ME2</span> <strong>Midterm 2</strong> (cumulative, emphasis weeks 5–8)</td><td>NBA GOATs “Peak, longevity, or both?”</td><td><span class="pill p-exam">ME2</span> · Lab · CI · Drills <span data-field="schedule.week_notes.8" data-optional></span></td></tr>
-              <tr class="row-cs"><td class="ctr"><strong>10</strong></td><td><span data-field="schedule.week_dates.9" data-label="DATES"></span></td><td><span class="pill p-cs">CS</span></td><td>Conditional reasoning and data-quality flags</td><td>Iteration, loops, and accumulators</td><td>Weather reuse — flag impossible rows</td><td>Lab · CI · Drills <span data-field="schedule.week_notes.9" data-optional></span></td></tr>
+              <tr class="row-data"><td class="ctr"><strong>9</strong></td><td><span data-field="schedule.week_dates.8" data-label="DATES"></span></td><td><span class="pill p-data">ETV</span></td><td><strong>Virtual class:</strong> watch the assigned videos to complete the class material; free self check-in</td><td class="exam-cell"><span class="pill p-exam">ME2</span> <strong>Midterm 2</strong> (cumulative, emphasis weeks 5–8)</td><td>NBA GOATs “Peak, longevity, or both?”</td><td><span class="pill p-exam">ME2</span> · Lab · Drills <span data-field="schedule.week_notes.8" data-optional></span></td></tr>
+              <tr class="row-cs"><td class="ctr"><strong>10</strong></td><td><span data-field="schedule.week_dates.9" data-label="DATES"></span></td><td><span class="pill p-cs">CS</span></td><td>Conditional reasoning and data-quality flags</td><td>Iteration, loops, and accumulators</td><td>Weather reuse - flag impossible rows</td><td>Lab · CI · Drills <span data-field="schedule.week_notes.9" data-optional></span></td></tr>
               <tr class="row-cs"><td class="ctr"><strong>11</strong></td><td><span data-field="schedule.week_dates.10" data-label="DATES"></span></td><td><span class="pill p-cs">CS</span></td><td>Compare iteration approaches</td><td><strong>Motivator: import and combine many files efficiently</strong></td><td>Kobe game logs × 30 seasons; Weather × 12 months</td><td>Lab · CI · Drills <span data-field="schedule.week_notes.10" data-optional></span></td></tr>
-              <tr class="row-cs holiday-row"><td class="ctr"><strong>12</strong></td><td><span data-field="schedule.week_dates.11" data-label="DATES"></span></td><td><span class="pill p-cs">CS</span></td><td>Build reusable workflows; scoping and debugging</td><td><strong>Veterans Day — no class</strong></td><td>Week-11 pipeline, one reusable workflow</td><td>Lab · CI · Drills <span data-field="schedule.week_notes.11" data-optional></span></td></tr>
-              <tr class="row-stat"><td class="ctr"><strong>13</strong></td><td><span data-field="schedule.week_dates.12" data-label="DATES"></span></td><td><span class="pill p-stat">STAT</span></td><td>Statistical questions &amp; hypothesis-testing foundations; <strong>.qmd from scratch #1</strong>; ANOVA</td><td class="exam-cell"><span class="pill p-exam">ME3</span> <strong>Midterm 3</strong> (cumulative, emphasis weeks 9–12)</td><td>Coffee reuse — “Does rating differ by origin?”</td><td><span class="pill p-exam">ME3</span> · Lab · CI · Drills <span data-field="schedule.week_notes.12" data-optional></span></td></tr>
-              <tr class="break-row"><td class="ctr"><strong>Break</strong></td><td>Nov. 23–29</td><td>—</td><td colspan="4"><strong>Fall Break — no classes</strong></td></tr>
-              <tr class="row-stat"><td class="ctr"><strong>14</strong></td><td><span data-field="schedule.week_dates.13" data-label="DATES"></span></td><td><span class="pill p-stat">STAT</span></td><td>Chi-square; .qmd #2</td><td>Interpretation; <em>Ethics: modeling</em></td><td>GOATs reuse — era × position</td><td>Lab · CI · Drills <span data-field="schedule.week_notes.13" data-optional></span></td></tr>
-              <tr class="row-stat"><td class="ctr"><strong>15</strong></td><td><span data-field="schedule.week_dates.14" data-label="DATES"></span></td><td><span class="pill p-stat">STAT</span></td><td>Simple linear regression; .qmd #3; <em>Ethics: transparency / consequences</em></td><td>Capstone review</td><td>GOATs reuse — points ~ seasons</td><td>Lab · CI · Drills <span data-field="schedule.week_notes.14" data-optional></span></td></tr>
-              <tr class="row-exam"><td class="ctr"><strong>Final</strong></td><td><span data-field="schedule.final_date" data-label="DATE &amp; TIME"></span></td><td><span class="pill p-exam">FE</span></td><td colspan="4"><strong>Common Final Exam</strong> — cumulative, all course material, 35 questions · <span data-field="course.final_exam_location" data-label="LOCATION"></span></td></tr>
+              <tr class="row-cs holiday-row"><td class="ctr"><strong>12</strong></td><td><span data-field="schedule.week_dates.11" data-label="DATES"></span></td><td><span class="pill p-cs">CS</span></td><td>Build reusable workflows; scoping and debugging</td><td><strong>Veterans Day - no class</strong></td><td>Week-11 pipeline, one reusable workflow</td><td>Lab · CI · Drills <span data-field="schedule.week_notes.11" data-optional></span></td></tr>
+              <tr class="row-stat"><td class="ctr"><strong>13</strong></td><td><span data-field="schedule.week_dates.12" data-label="DATES"></span></td><td><span class="pill p-stat">STAT</span></td><td>Statistical questions &amp; hypothesis-testing foundations; <strong>.qmd from scratch #1</strong>; ANOVA</td><td class="exam-cell"><span class="pill p-exam">ME3</span> <strong>Midterm 3</strong> (cumulative, emphasis weeks 9–12)</td><td>Coffee reuse - “Does rating differ by origin?”</td><td><span class="pill p-exam">ME3</span> · Lab · CI · Drills <span data-field="schedule.week_notes.12" data-optional></span></td></tr>
+              <tr class="break-row"><td class="ctr"><strong>Break</strong></td><td>Nov. 23–29</td><td> - </td><td colspan="4"><strong>Fall Break - no classes</strong></td></tr>
+              <tr class="row-stat"><td class="ctr"><strong>14</strong></td><td><span data-field="schedule.week_dates.13" data-label="DATES"></span></td><td><span class="pill p-stat">STAT</span></td><td>Chi-square; .qmd #2</td><td>Interpretation; <em>Ethics: modeling</em></td><td>GOATs reuse - era × position</td><td>Lab · CI · Drills <span data-field="schedule.week_notes.13" data-optional></span></td></tr>
+              <tr class="row-stat"><td class="ctr"><strong>15</strong></td><td><span data-field="schedule.week_dates.14" data-label="DATES"></span></td><td><span class="pill p-stat">STAT</span></td><td>Simple linear regression; .qmd #3; <em>Ethics: transparency / consequences</em></td><td>Capstone review</td><td>GOATs reuse - points ~ seasons</td><td>Lab · CI · Drills <span data-field="schedule.week_notes.14" data-optional></span></td></tr>
+              <tr class="row-exam"><td class="ctr"><strong>Final</strong></td><td><span data-field="schedule.final_date" data-label="DATE &amp; TIME"></span></td><td><span class="pill p-exam">FE</span></td><td colspan="4"><strong>Common Final Exam</strong> - cumulative, all course material, 35 questions · <span data-field="course.final_exam_location" data-label="LOCATION"></span></td></tr>
             </tbody>
               </table>
             </div>
@@ -452,8 +451,8 @@
               <tr><td><span class="pill p-exam">FE</span> Common Final Exam (all material)</td><td>Saturday after classes end</td><td><span data-field="schedule.final_date" data-label="DATE &amp; TIME"></span></td></tr>
               <tr><td><span class="pill p-lab">L</span> Labs 1–15</td><td>Weekly</td><td><span data-field="schedule.lab_due" data-label="DUE DAY / TIME"></span></td></tr>
               <tr><td><span class="pill p-drill">D</span> Drills</td><td>~4 per week, all term</td><td><span data-field="schedule.drill_deadline" data-label="WEEKLY DEADLINE"></span></td></tr>
-              <tr><td><span class="pill p-ci">CI</span> Check-Ins</td><td>In class, most meetings</td><td>—</td></tr>
-              <tr><td>Add/drop deadline · Withdrawal deadline · Holidays</td><td>—</td><td><span data-field="schedule.other_deadlines" data-label="DATES"></span></td></tr>
+              <tr><td><span class="pill p-ci">CI</span> Check-Ins</td><td>In class, most meetings</td><td> - </td></tr>
+              <tr><td><strong>Important academic dates and holidays</strong></td><td>See list</td><td><span data-field="schedule.other_deadlines" data-fmt="rich" data-label="DATES"></span></td></tr>
             </tbody>
               </table>
             </div>
@@ -481,10 +480,10 @@
 
         <div class="box cs"><b>Artificial intelligence (generative AI) use</b>
           <ul>
-            <li><span class="pill p-lab">Labs</span> — generative AI tools <strong>are permitted</strong>. <span data-field="policies.ai_labs" data-label="DISCLOSURE / RESPONSIBILITY RULES"></span></li>
-            <li><span class="pill p-ci">Check-Ins</span> — <span data-field="policies.ai_checkins" data-label="AI POLICY FOR CHECK-INS"></span></li>
-            <li><span class="pill p-drill">Drills</span> — <span data-field="policies.ai_drills" data-label="AI POLICY FOR DRILLS"></span></li>
-            <li><span class="pill p-exam">Exams</span> — <span data-field="policies.ai_exams" data-label="AI POLICY FOR EXAMS"></span></li>
+            <li><span class="pill p-lab">Labs</span> - generative AI tools <strong>are permitted</strong>. <span data-field="policies.ai_labs" data-label="DISCLOSURE / RESPONSIBILITY RULES"></span></li>
+            <li><span class="pill p-ci">Check-Ins</span> - <span data-field="policies.ai_checkins" data-label="AI POLICY FOR CHECK-INS"></span></li>
+            <li><span class="pill p-drill">Drills</span> - <span data-field="policies.ai_drills" data-label="AI POLICY FOR DRILLS"></span></li>
+            <li><span class="pill p-exam">Exams</span> - <span data-field="policies.ai_exams" data-label="AI POLICY FOR EXAMS"></span></li>
           </ul>
           <div data-field="policies.ai_statement" data-fmt="rich" data-label="CAMPUS GENERATIVE-AI SYLLABUS STATEMENT"></div>
         </div>
@@ -515,22 +514,15 @@
 
         <div class="box found"><b>Guidelines for succeeding in the course</b>
           <ul>
-            <li>Do the drills as scheduled (~4× per week, 5–20 minutes each) — spaced review is how the material sticks, and drills preview the hard topics before they are taught.</li>
+            <li>Do the drills as scheduled (~4× per week, 5–20 minutes each) - spaced review is how the material sticks, and drills preview the hard topics before they are taught.</li>
             <li>Come to every class: each meeting in weeks 3–9 is a complete Extract → Transform → Visualize cycle, and Check-Ins happen in class.</li>
-            <li>Treat labs as rehearsal for exams — exam questions reflect the skills practiced in the notes, drills, and labs, and every exam is cumulative.</li>
+            <li>Treat labs as rehearsal for exams - exam questions reflect the skills practiced in the notes, drills, and labs, and every exam is cumulative.</li>
             <li>Keep a clean project: <code>R/</code> for scripts, <code>Data/</code> for data, and cache what you extract (<code>write_csv()</code> habit).</li>
-            <li>Learn to read help documentation and other resources (CLO 11) — independence is a graded skill.</li>
+            <li>Learn to read help documentation and other resources (CLO 11) - independence is a graded skill.</li>
           </ul>
           <div data-field="policies.success_extra" data-fmt="rich" data-optional></div>
         </div>
 
-        <div class="box gray"><b>Course-related trips and special events</b>
-          <p><span data-field="policies.trips_events" data-label="TRIPS / SPECIAL EVENTS (or “None planned”)"></span></p>
-        </div>
-
-        <div class="box drill"><b>Stickers and other course incentives</b>
-          <p><span data-field="policies.incentives" data-label="INCENTIVES (or “None”)"></span></p>
-        </div>
 
         <div class="box data"><b>Disability Resource Center (DRC) accommodations</b>
           <div data-field="policies.drc" data-fmt="rich" data-label="CAL POLY DRC ACCOMMODATIONS STATEMENT"></div>
